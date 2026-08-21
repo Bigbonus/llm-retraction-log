@@ -259,7 +259,7 @@ statistical error, and they are not usually reported.
 
 ## 8. Availability
 
-[](retractions.jsonl) holds the same eight cases in the
+[`retractions.jsonl`](retractions.jsonl) holds the same eight cases in the
 schema of section 3, one JSON object per line. It continues to accumulate.
 Later versions of this document add cases; the case identifiers (A-H) are
 stable and will not be reassigned.
