@@ -274,3 +274,32 @@ upstream as ollama/ollama#17889.
 *Written with an AI collaborator. All measurements were run on the machine
 described; every figure in this document is from a recorded row, and the
 retracted claims are quoted as they were originally written.*
+
+---
+
+## Author's note — not part of the paper
+
+The program described in section 2 also produced two books. They are the same
+machine and the same habit seen from the other side: what it takes to build and
+keep the thing running, rather than what broke.
+
+**Raising Your Own AI on a Home PC** — six months on the 16 GB consumer GPU
+described above. It opens with the morning an AI told me *"Actually, that isn't
+distillation."* I had spent half a year collecting 133 draft-and-correction
+pairs as experience points for a student model whose weights had been updated
+exactly zero times. It keeps the wiring mistakes, the scoring mistakes and the
+failed predictions — including the run where the machine score improved while a
+blinded human comparison gave the trained side 0 wins, 9 losses and 11 ties.
+[Kindle $9.99](https://www.amazon.com/dp/B0HCT93JX3) ·
+[Paperback $12.99](https://www.amazon.com/dp/B0HDPMNMTQ) ·
+data at [10.5281/zenodo.21730423](https://doi.org/10.5281/zenodo.21730423)
+
+**Applied AI Distillation: Make AI Yours** — five practical paths for adapting a
+model to your own use, starting from a no-training baseline, with runnable
+fixtures and known-answer tests.
+[Kindle $9.99](https://www.amazon.com/dp/B0HFJNDJV6) ·
+[Paperback $79.90](https://www.amazon.com/dp/B0HFKFZ5Q2)
+
+**No claim in this log depends on either book, and neither is needed to
+reproduce anything here.** The ledger, the schema and the eight cases stand on
+their own and are CC BY 4.0.
