@@ -43,12 +43,22 @@ each claim dies.
 
 One RTX 5080 (16 GB), 32 GB system RAM, Windows. Models: Qwen3 at 1.7B, 4B, 8B,
 14B, plus a Nemotron Nano 9B, served through ollama 0.32.9 and through
-transformers/peft directly. Roughly 25,000 measured rows across nineteen probe
+transformers/peft directly. Roughly 70,000 measured rows across nineteen probe
 waves, 135 LoRA adapters retained from earlier training runs, and a frozen
 deterministic scorer.
 
 Single operator. No lab, no second pair of eyes except an AI collaborator and,
 late in the day, maintainers on a public issue tracker.
+
+> **Correction (2026-08-22).** Version 1 of this document, and the Zenodo
+> deposit made from it, said *"roughly 25,000 measured rows"*. That was an
+> estimate I never checked. Counting rows on disk with timestamps at or before
+> the time of writing gives **69,727** across nineteen waves; the twenty-four
+> hours the paper covers account for 32,843 of them on their own. Neither
+> figure is 25,000. The error is an undercount, which is the harmless
+> direction, but it is still a number written without counting — the same
+> failure mode as several of the cases below. No claim in this document depends
+> on the row count.
 
 ## 3. Schema
 
