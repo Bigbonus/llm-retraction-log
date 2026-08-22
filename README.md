@@ -1,18 +1,19 @@
-# Eight Retractions in Twenty-Four Hours: A Log of What Broke While Measuring Small Language Models on One Home PC
+# Eleven Retractions in Forty-Eight Hours: A Log of What Broke While Measuring Small Language Models on One Home PC
 
-**Version 1. 2026-08-21. This document is designed to grow; later versions add cases rather than replace them.**
+**Version 2. 2026-08-22. This document is designed to grow; later versions add cases rather than replace them.**
 
 ---
 
 ## Abstract
 
 Over roughly twenty-four hours of continuous measurement on a single consumer
-GPU, eight claims I had written down were retracted. I kept the retractions in
+GPU, eleven claims I had written down were retracted. I kept the retractions in
 a fixed schema at the moment each one died, including a field that cannot be
 reconstructed afterwards: *why it looked true*.
 
-Three of the eight were caused by **my own tools reporting something that had
-not happened**. Three were caused by **changing the framing of a task and
+Five of the eleven were caused by **my own instruments** — three reporting
+something that had not happened, two designed so that a correct answer scored
+zero. Three were caused by **changing the framing of a task and
 watching the result reverse**. Two were caused by **stating a direction from a
 single-digit sample**.
 
@@ -74,7 +75,7 @@ generalizable        whether this is a shape others will hit
 lesson               one line
 ```
 
-## 4. The eight cases
+## 4. The eleven cases
 
 ### 4.1 Tools that reported something that had not happened
 
@@ -163,6 +164,13 @@ never been measured.
 order are not a mechanism. The relevant variable was invisible in the framing
 that produced the observation.
 
+*Follow-up (2026-08-22):* I then got the mechanism wrong twice more before an
+upstream maintainer settled it. It is not "imported GGUFs carry Jinja": ollama
+picks between the Go and Jinja templates by **comparing their capabilities**,
+and that choice decides whether ollama pre-processes the prompt (silent
+truncation, 200) or hands the message list to llama-server (explicit 400).
+Three wrong mechanisms for one two-valued observation.
+
 **Case E — "interference is determined by type, not amount."**
 
 A series of waves had shown that varying the number of same-format distractors
@@ -222,16 +230,57 @@ recorded, which is the part worth reporting: writing the lesson down did not
 prevent the repeat. What prevents it is a rule with a number in it — do not
 state a direction below some fixed n — not an intention to be careful.
 
+### 4.4 Three more, added on day two
+
+**Case I — an arm I dropped without saying so.** The ladder result was written
+as "three Qwen3 models". A fourth model, 1,772 rows in the same wave, was left
+out because it scored 0.46 with no rung structure. Counting its verdicts showed
+why: 31% truncated before any visible answer, 21% emitted no identifier — **52%
+non-answers**, against 0-1% for the other three. Dropping it was right. Not
+saying so was not. *Lesson: report the arm you dropped, with the reason and the
+numbers; silence is indistinguishable from selective reporting.*
+
+**Case J — the distractors encoded the answer.** To harden the top rung I made
+every distractor identifier differ from the gold one by exactly one character
+at a uniformly random position. Accuracy *rose*, 0.44 to 0.98, which I read as
+robustness to confusable identifiers. It is a leak: across k such distractors
+the position-wise modal character is the gold character at every position, so
+majority-voting the distractor set reconstructs the answer with no model at
+all.
+
+| k | 1 | 3 | 8 | 20 | 40 | 80 | independent-id control |
+|---|---|---|---|---|---|---|---|
+| P(majority = gold) | 0.000 | 0.900 | **1.000** | **1.000** | **1.000** | **1.000** | 0.000 |
+
+*Generalisable:* making hard negatives resemble the positive is standard
+advice. Past a threshold the negative *set* becomes an error-correcting code
+for the positive — the more distractors you add to raise difficulty, the more
+reliably the code decodes. *Lesson: try to solve the condition with a
+model-free heuristic first. The check is twenty lines and needs no GPU.*
+
+**Case K — an extreme p-value I did not earn.** Moving the gold line to the
+head of the context dropped that rung to 0.00 (n=24), p ~ 6e-8 against a 0.5
+null, which I reported as evidence of positional conflict resolution. Reading
+the item aloud ended it: on that rung *every* line carries the same field
+marker, so "the latest attempt" is the last such line. The model answered
+correctly; my key said the first line. **The design drives the score to zero as
+reading improves.** The same manipulation is well-posed on the other four
+rungs, where distractors carry different markers, and those hold at 0.94-1.00
+across three models. *Validity was rung-dependent, not condition-dependent — a
+per-condition sanity check would have passed. Lesson: an extreme p-value is a
+reason to re-read the item, not a licence to skip it.*
+
 ## 5. Distribution
 
 ```
-Tools reporting non-events        3 / 8
-Framing reversals                 3 / 8
-Direction from small n            2 / 8
+Tools reporting non-events        3 / 11
+Instrument design defects         2 / 11   (added day two)
+Framing reversals                 3 / 11
+Direction from small n            2 / 11
+Selective reporting               1 / 11   (added day two)
 ```
 
-Three of eight — the largest single category — were not errors of inference at
-all. They were programs printing conclusions about events that had not
+Five of eleven — the largest grouping — were not errors of inference at all. They were programs printing conclusions about events that had not
 occurred. Every one was written by the same person who then read its output as
 evidence.
 
@@ -258,7 +307,7 @@ evidence.
 ## 7. Limitations
 
 This is a log from one operator, one machine, one day, in one subfield. The
-eight cases are the ones that died while records were being kept in this
+eleven cases are the ones that died while records were being kept in this
 schema; earlier retractions from the same project are not included because the
 `why_it_looked_true` field was not captured at the time — which is itself the
 argument for the schema.
@@ -269,9 +318,9 @@ statistical error, and they are not usually reported.
 
 ## 8. Availability
 
-[`retractions.jsonl`](retractions.jsonl) holds the same eight cases in the
+[`retractions.jsonl`](retractions.jsonl) holds the same eleven cases in the
 schema of section 3, one JSON object per line. It continues to accumulate.
-Later versions of this document add cases; the case identifiers (A-H) are
+Later versions of this document add cases; the case identifiers (A-K) are
 stable and will not be reassigned.
 
 Related: the measurement that produced cases A and D is written up separately,
