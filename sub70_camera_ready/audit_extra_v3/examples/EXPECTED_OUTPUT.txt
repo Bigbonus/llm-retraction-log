@@ -1,0 +1,12 @@
+## toy_binomial.csv (exit 0)
+rows given 480, rows in usable cells 480, cells given 20, cells used 20, excluded none
+cells used 20  df 40  phi 1.209  permutation p 0.232  (null mean 1.049)
+## toy_overdispersed.csv (exit 0)
+rows given 480, rows in usable cells 480, cells given 20, cells used 20, excluded none
+cells used 20  df 40  phi 3.203  permutation p 0.001  (null mean 1.052)
+## malformed_bad_value.csv (exit 2)
+refused, no number computed:
+  line 5: correct='maybe' is not 1/0, true/false, yes/no
+## malformed_ragged_row.csv (exit 2)
+refused, no number computed:
+  line 3: 4 fields, header has 3
