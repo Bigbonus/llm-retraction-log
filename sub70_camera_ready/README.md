@@ -22,3 +22,6 @@ submitted figure, and checks that it fails on a known-bad input before reporting
 ## audit_extra/
 `d1_cell_pairs.py` / `D1_CELL_PAIRS_V1.json` — recomputation of the corpus-wide readable-pair figures at phi = 1.08 and phi = 1.
 `d2_floor_table.py` / `D2_FLOOR_TABLE_V1.json` — the minimum-readable-difference table and calibration thresholds.
+
+## audit_extra_v3/
+`between_repeat_phi.py` is a schema-free, standard-library implementation of the between-repeat estimator with a built-in self-test (`--selftest`); give it a CSV with columns cell, repeat, correct. `g1_export_design_cells.py` shows it reproduces Appendix C exactly on the paper cells. `g2_readable_false_alarm.py` / `G2_READABLE_FALSE_ALARM_V1.json` measure the readable rule on same-condition repeat pairs: observed flag rate, permuted null, and hit rate on an injected 0.5 shift, by repeat size. `G1_G2_RESULTS_V1.md` summarises both with their limits.

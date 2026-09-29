@@ -1,0 +1,16 @@
+{
+ "id": "SUB70_G1_SCHEMA_FREE_REPRODUCTION_V1",
+ "rows": 31938,
+ "published": {
+  "phi": 1.076,
+  "df": 1424,
+  "cells": 166
+ },
+ "got": {
+  "cells": 166,
+  "df": 1424,
+  "phi": 1.076
+ },
+ "match": true,
+ "sha256_between_repeat_phi": "1a3477948c59"
+}
