@@ -1,0 +1,447 @@
+{
+ "id": "SUB70_G2_READABLE_FLAG_RATE_V2",
+ "supersedes": "SUB70_G2_READABLE_FALSE_ALARM_V1",
+ "phi": 1.08,
+ "min_rows_per_repeat": 4,
+ "nperm": 200,
+ "ndraw": 400,
+ "power_pairs_preregistered": [
+  [
+   0.25,
+   0.75
+  ],
+  [
+   0.4,
+   0.9
+  ],
+  [
+   0.5,
+   0.8
+  ]
+ ],
+ "rule": "readable(n1,n2) = 2*sqrt(phi*0.25/n1 + phi*0.25/n2)",
+ "assumptions": [
+  "phi 1.08 was estimated on these same repeats",
+  "A is a within-condition flag rate, not an established false-positive rate",
+  "shuffled rate is a null only under exchangeability across repeats, not established",
+  "B is a deterministic fixture, not power",
+  "no figure is an independent-sample estimate: pairs share rows, items, cells, waves"
+ ],
+ "per_wave": {
+  "mythos_battery_wave6_v1.jsonl": {
+   "cells": 18,
+   "A_within_condition": {
+    "4-7": {
+     "pairs": 90,
+     "fired": 0,
+     "rate": 0.0
+    },
+    "8-15": {
+     "pairs": 180,
+     "fired": 0,
+     "rate": 0.0
+    },
+    "all": {
+     "pairs": 270,
+     "fired": 0,
+     "rate": 0.0
+    }
+   },
+   "A_shuffled": {
+    "4-7": {
+     "pairs": 18000,
+     "fired": 93,
+     "rate": 0.0052
+    },
+    "8-15": {
+     "pairs": 36000,
+     "fired": 186,
+     "rate": 0.0052
+    },
+    "all": {
+     "pairs": 54000,
+     "fired": 279,
+     "rate": 0.0052
+    }
+   },
+   "B_fixture": {
+    "4-7": {
+     "pairs": 90,
+     "fired": 11,
+     "rate": 0.1222,
+     "mean_realized_abs_diff": 0.483
+    },
+    "8-15": {
+     "pairs": 180,
+     "fired": 85,
+     "rate": 0.4722,
+     "mean_realized_abs_diff": 0.4969
+    },
+    "all": {
+     "pairs": 270,
+     "fired": 96,
+     "rate": 0.3556,
+     "mean_realized_abs_diff": 0.4923
+    }
+   }
+  },
+  "mythos_exploration_wave2_v1.jsonl": {
+   "cells": 0,
+   "A_within_condition": {},
+   "A_shuffled": {},
+   "B_fixture": {}
+  },
+  "mythos_exploration_wave3_v1.jsonl": {
+   "cells": 0,
+   "A_within_condition": {},
+   "A_shuffled": {},
+   "B_fixture": {}
+  },
+  "mythos_lepsilon_decisive_wave9_v1.jsonl": {
+   "cells": 74,
+   "A_within_condition": {
+    "4-7": {
+     "pairs": 712,
+     "fired": 9,
+     "rate": 0.0126
+    },
+    "8-15": {
+     "pairs": 180,
+     "fired": 0,
+     "rate": 0.0
+    },
+    "all": {
+     "pairs": 892,
+     "fired": 9,
+     "rate": 0.0101
+    }
+   },
+   "A_shuffled": {
+    "4-7": {
+     "pairs": 142400,
+     "fired": 2060,
+     "rate": 0.0145
+    },
+    "8-15": {
+     "pairs": 36000,
+     "fired": 409,
+     "rate": 0.0114
+    },
+    "all": {
+     "pairs": 178400,
+     "fired": 2469,
+     "rate": 0.0138
+    }
+   },
+   "B_fixture": {
+    "4-7": {
+     "pairs": 712,
+     "fired": 84,
+     "rate": 0.118,
+     "mean_realized_abs_diff": 0.5043
+    },
+    "8-15": {
+     "pairs": 180,
+     "fired": 110,
+     "rate": 0.6111,
+     "mean_realized_abs_diff": 0.4938
+    },
+    "all": {
+     "pairs": 892,
+     "fired": 194,
+     "rate": 0.2175,
+     "mean_realized_abs_diff": 0.5022
+    }
+   }
+  },
+  "mythos_reading_derived_wave11_v1.jsonl": {
+   "cells": 14,
+   "A_within_condition": {
+    "4-7": {
+     "pairs": 118,
+     "fired": 0,
+     "rate": 0.0
+    },
+    "8-15": {
+     "pairs": 10,
+     "fired": 0,
+     "rate": 0.0
+    },
+    "all": {
+     "pairs": 128,
+     "fired": 0,
+     "rate": 0.0
+    }
+   },
+   "A_shuffled": {
+    "4-7": {
+     "pairs": 23600,
+     "fired": 122,
+     "rate": 0.0052
+    },
+    "8-15": {
+     "pairs": 2000,
+     "fired": 0,
+     "rate": 0.0
+    },
+    "all": {
+     "pairs": 25600,
+     "fired": 122,
+     "rate": 0.0048
+    }
+   },
+   "B_fixture": {
+    "4-7": {
+     "pairs": 118,
+     "fired": 4,
+     "rate": 0.0339,
+     "mean_realized_abs_diff": 0.4936
+    },
+    "8-15": {
+     "pairs": 10,
+     "fired": 10,
+     "rate": 1.0,
+     "mean_realized_abs_diff": 0.5
+    },
+    "all": {
+     "pairs": 128,
+     "fired": 14,
+     "rate": 0.1094,
+     "mean_realized_abs_diff": 0.4941
+    }
+   }
+  },
+  "mythos_technique_wave5_v1.jsonl": {
+   "cells": 7,
+   "A_within_condition": {
+    "4-7": {
+     "pairs": 57,
+     "fired": 0,
+     "rate": 0.0
+    },
+    "8-15": {
+     "pairs": 50,
+     "fired": 0,
+     "rate": 0.0
+    },
+    "all": {
+     "pairs": 107,
+     "fired": 0,
+     "rate": 0.0
+    }
+   },
+   "A_shuffled": {
+    "4-7": {
+     "pairs": 11400,
+     "fired": 52,
+     "rate": 0.0046
+    },
+    "8-15": {
+     "pairs": 10000,
+     "fired": 0,
+     "rate": 0.0
+    },
+    "all": {
+     "pairs": 21400,
+     "fired": 52,
+     "rate": 0.0024
+    }
+   },
+   "B_fixture": {
+    "4-7": {
+     "pairs": 57,
+     "fired": 4,
+     "rate": 0.0702,
+     "mean_realized_abs_diff": 0.4881
+    },
+    "8-15": {
+     "pairs": 50,
+     "fired": 15,
+     "rate": 0.3,
+     "mean_realized_abs_diff": 0.5111
+    },
+    "all": {
+     "pairs": 107,
+     "fired": 19,
+     "rate": 0.1776,
+     "mean_realized_abs_diff": 0.4988
+    }
+   }
+  },
+  "mythos_type_decomposition_wave10_v1.jsonl": {
+   "cells": 7,
+   "A_within_condition": {
+    "4-7": {
+     "pairs": 105,
+     "fired": 0,
+     "rate": 0.0
+    },
+    "8-15": {
+     "pairs": 63,
+     "fired": 0,
+     "rate": 0.0
+    },
+    "all": {
+     "pairs": 168,
+     "fired": 0,
+     "rate": 0.0
+    }
+   },
+   "A_shuffled": {
+    "4-7": {
+     "pairs": 21000,
+     "fired": 182,
+     "rate": 0.0087
+    },
+    "8-15": {
+     "pairs": 12600,
+     "fired": 52,
+     "rate": 0.0041
+    },
+    "all": {
+     "pairs": 33600,
+     "fired": 234,
+     "rate": 0.007
+    }
+   },
+   "B_fixture": {
+    "4-7": {
+     "pairs": 105,
+     "fired": 17,
+     "rate": 0.1619,
+     "mean_realized_abs_diff": 0.4807
+    },
+    "8-15": {
+     "pairs": 63,
+     "fired": 49,
+     "rate": 0.7778,
+     "mean_realized_abs_diff": 0.4939
+    },
+    "all": {
+     "pairs": 168,
+     "fired": 66,
+     "rate": 0.3929,
+     "mean_realized_abs_diff": 0.4857
+    }
+   }
+  }
+ },
+ "pooled": {
+  "A_within_condition": {
+   "4-7": {
+    "pairs": 1082,
+    "fired": 9,
+    "rate": 0.0083
+   },
+   "8-15": {
+    "pairs": 483,
+    "fired": 0,
+    "rate": 0.0
+   },
+   "all": {
+    "pairs": 1565,
+    "fired": 9,
+    "rate": 0.0058
+   }
+  },
+  "A_shuffled": {
+   "4-7": {
+    "pairs": 216400,
+    "fired": 2509,
+    "rate": 0.0116
+   },
+   "8-15": {
+    "pairs": 96600,
+    "fired": 647,
+    "rate": 0.0067
+   },
+   "all": {
+    "pairs": 313000,
+    "fired": 3156,
+    "rate": 0.0101
+   }
+  },
+  "B_fixture": {
+   "4-7": {
+    "pairs": 1082,
+    "fired": 120,
+    "rate": 0.1109,
+    "mean_realized_abs_diff": 0.4982
+   },
+   "8-15": {
+    "pairs": 483,
+    "fired": 269,
+    "rate": 0.5569,
+    "mean_realized_abs_diff": 0.4969
+   },
+   "all": {
+    "pairs": 1565,
+    "fired": 389,
+    "rate": 0.2486,
+    "mean_realized_abs_diff": 0.4978
+   }
+  },
+  "C_power_monte_carlo": {
+   "p1=0.25,p2=0.75": {
+    "4-7": {
+     "draws": 432800,
+     "power": 0.355,
+     "mc_se": 0.0007
+    },
+    "8-15": {
+     "draws": 193200,
+     "power": 0.5418,
+     "mc_se": 0.0011
+    },
+    "all": {
+     "draws": 626000,
+     "power": 0.4127,
+     "mc_se": 0.0006
+    }
+   },
+   "p1=0.40,p2=0.90": {
+    "4-7": {
+     "draws": 432800,
+     "power": 0.3362,
+     "mc_se": 0.0007
+    },
+    "8-15": {
+     "draws": 193200,
+     "power": 0.5371,
+     "mc_se": 0.0011
+    },
+    "all": {
+     "draws": 626000,
+     "power": 0.3982,
+     "mc_se": 0.0006
+    }
+   },
+   "p1=0.50,p2=0.80": {
+    "4-7": {
+     "draws": 432800,
+     "power": 0.1177,
+     "mc_se": 0.0005
+    },
+    "8-15": {
+     "draws": 193200,
+     "power": 0.1819,
+     "mc_se": 0.0009
+    },
+    "all": {
+     "draws": 626000,
+     "power": 0.1375,
+     "mc_se": 0.0004
+    }
+   }
+  }
+ },
+ "inputs": {
+  "mythos_battery_wave6_v1.jsonl": "463c8bbfda88",
+  "mythos_exploration_wave2_v1.jsonl": "951aeb54b285",
+  "mythos_exploration_wave3_v1.jsonl": "117af3dda90f",
+  "mythos_lepsilon_decisive_wave9_v1.jsonl": "7395220c216b",
+  "mythos_reading_derived_wave11_v1.jsonl": "d594c36338be",
+  "mythos_technique_wave5_v1.jsonl": "dc074c93912a",
+  "mythos_type_decomposition_wave10_v1.jsonl": "f3d8a64b14b4"
+ }
+}
