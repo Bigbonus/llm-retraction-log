@@ -1,0 +1,5 @@
+phi_1.01_paper {'phi': 1.01, 'pairs': 46279, 'readable': 8008, 'share': 0.173, 'diff_ge_0.30_rejected': 639}
+phi_1.00 {'phi': 1.0, 'pairs': 46279, 'readable': 8090, 'share': 0.1748, 'diff_ge_0.30_rejected': 559}
+phi_corrected {'phi': 1.076, 'pairs': 46279, 'readable': 7943, 'share': 0.1716, 'diff_ge_0.30_rejected': 685}
+calibration match: True | known-bad (no cutoff): (72187, 14204, 1110)
+wrote G:\chappy_ai_storage\handoff\judge2026_camera_ready_v1\audit_extra\D1_CELL_PAIRS_V1.json

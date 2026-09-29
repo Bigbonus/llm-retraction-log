@@ -1,0 +1,180 @@
+{
+ "id": "SUB70_AUDIT_C_K1_MATCHED_V1",
+ "k1": {
+  "mythos-4b-champion:q4km": {
+   "verdicts": {
+    "USED_LATEST": 16,
+    "USED_OLDER": 2
+   },
+   "scored": 18,
+   "gold": 16,
+   "majority_followed": 2,
+   "majority_followed_CI95": [
+    0.014,
+    0.347
+   ]
+  },
+  "qwen3:14b": {
+   "verdicts": {
+    "USED_LATEST": 8,
+    "ERROR": 1,
+    "USED_OLDER": 3
+   },
+   "scored": 11,
+   "gold": 8,
+   "majority_followed": 3,
+   "majority_followed_CI95": [
+    0.06,
+    0.61
+   ]
+  },
+  "qwen3:4b": {
+   "verdicts": {
+    "USED_LATEST": 12
+   },
+   "scored": 12,
+   "gold": 12,
+   "majority_followed": 0,
+   "majority_followed_CI95": [
+    0.0,
+    0.265
+   ]
+  },
+  "auditable_two_models": {
+   "majority_followed": 5,
+   "scored": 29,
+   "CI95": [
+    0.058,
+    0.358
+   ]
+  }
+ },
+ "matched": {
+  "W18_plain_T0": {
+   "per_k": {
+    "1": [
+     41,
+     42
+    ],
+    "3": [
+     42,
+     42
+    ],
+    "8": [
+     13,
+     42
+    ],
+    "20": [
+     11,
+     42
+    ],
+    "40": [
+     4,
+     36
+    ],
+    "80": [
+     1,
+     36
+    ]
+   },
+   "all": [
+    112,
+    240
+   ],
+   "acc_all": 0.4667,
+   "k_ge_8": [
+    29,
+    156
+   ],
+   "acc_k_ge_8": 0.1859,
+   "k_le_3": [
+    83,
+    84
+   ]
+  },
+  "W18_plain_allT": {
+   "per_k": {
+    "1": [
+     62,
+     66
+    ],
+    "3": [
+     65,
+     66
+    ],
+    "8": [
+     17,
+     66
+    ],
+    "20": [
+     17,
+     66
+    ],
+    "40": [
+     7,
+     60
+    ],
+    "80": [
+     1,
+     60
+    ]
+   },
+   "all": [
+    169,
+    384
+   ],
+   "acc_all": 0.4401,
+   "k_ge_8": [
+    42,
+    252
+   ],
+   "acc_k_ge_8": 0.1667,
+   "k_le_3": [
+    127,
+    132
+   ]
+  },
+  "W19_near_ids_T0": {
+   "per_k": {
+    "1": [
+     16,
+     18
+    ],
+    "3": [
+     18,
+     18
+    ],
+    "8": [
+     18,
+     18
+    ],
+    "20": [
+     18,
+     18
+    ],
+    "40": [
+     18,
+     18
+    ],
+    "80": [
+     18,
+     18
+    ]
+   },
+   "all": [
+    106,
+    108
+   ],
+   "acc_all": 0.9815,
+   "k_ge_8": [
+    72,
+    72
+   ],
+   "acc_k_ge_8": 1.0,
+   "k_le_3": [
+    34,
+    36
+   ]
+  }
+ }
+}

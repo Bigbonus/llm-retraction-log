@@ -1,0 +1,35 @@
+{
+ "id": "SUB70_CR_D1_CELL_PAIRS_V1",
+ "reimplements": "mythos_claim_audit_v1.py sha256 275bd0998ac9",
+ "phi_corrected_source": "A_PHI_FINE_PERMUTATION_V1.json pooled.phi_between_repeat",
+ "rows": {
+  "phi_1.01_paper": {
+   "phi": 1.01,
+   "pairs": 46279,
+   "readable": 8008,
+   "share": 0.173,
+   "diff_ge_0.30_rejected": 639
+  },
+  "phi_1.00": {
+   "phi": 1.0,
+   "pairs": 46279,
+   "readable": 8090,
+   "share": 0.1748,
+   "diff_ge_0.30_rejected": 559
+  },
+  "phi_corrected": {
+   "phi": 1.076,
+   "pairs": 46279,
+   "readable": 7943,
+   "share": 0.1716,
+   "diff_ge_0.30_rejected": 685
+  }
+ },
+ "calibration_match": true,
+ "known_bad_no_cutoff": {
+  "pairs": 72187,
+  "readable": 14204,
+  "rejected_ge_0.30": 1110,
+  "reproduces_paper": false
+ }
+}

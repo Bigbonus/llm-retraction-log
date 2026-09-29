@@ -1,0 +1,24 @@
+### 1. reproduce Appendix D
+  W18 paper (0.69, 178.3) recomputed (0.69, 178.3) OK
+  pooled recomputed OR 0.957 [0.905, 1.011] k 16 I2 44% tau2 0.0046  OK
+
+### 2. known-bad inputs
+  no_cutoff              W18 OR 1.216 | OR 1.035 [0.960, 1.116] k 16 I2 71% tau2 0.0139 | reproduces paper: False
+  nonevents_as_failures  W18 OR 0.597 | OR 0.934 [0.858, 1.017] k 16 I2 78% tau2 0.0195 | reproduces paper: False
+
+### 3. W18 by temperature x model: cap hits and accuracy
+  hf.co/unsloth/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF:Q4_K_M T=0.0  rows     4 cap     0 (0.000) trunc_novis    0 | acc scored None  acc no-cap None (n 0)
+  mythos-4b-champion:q4km            T=0.0  rows  1200 cap     0 (0.000) trunc_novis    0 | acc scored 0.8932  acc no-cap 0.8932 (n 1198)
+  mythos-4b-champion:q4km            T=0.7  rows   720 cap     0 (0.000) trunc_novis    0 | acc scored 0.8792  acc no-cap 0.8792 (n 720)
+  mythos-nemotron-nano-9b-v2:q5km    T=0.0  rows   888 cap   459 (0.517) trunc_novis  230 | acc scored 0.6916  acc no-cap 0.9484 (n 426)
+  mythos-nemotron-nano-9b-v2:q5km    T=0.7  rows   884 cap   555 (0.628) trunc_novis  327 | acc scored 0.6511  acc no-cap 0.9634 (n 328)
+  qwen3:14b                          T=0.0  rows   933 cap     0 (0.000) trunc_novis    0 | acc scored 0.9481  acc no-cap 0.9481 (n 924)
+  qwen3:14b                          T=0.7  rows   600 cap     0 (0.000) trunc_novis    0 | acc scored 0.9414  acc no-cap 0.9414 (n 597)
+  qwen3:4b                           T=0.0  rows  1112 cap  1052 (0.946) trunc_novis    0 | acc scored 0.9584  acc no-cap 0.9815 (n 54)
+  qwen3:4b                           T=0.7  rows   752 cap   722 (0.960) trunc_novis    0 | acc scored 0.8907  acc no-cap 1.0 (n 28)
+
+### 4. W18 OR: all scored, no-cap only, model-stratified
+  all_scored {'crude_OR_all_models': 0.685, 'crude_CI': [0.592, 0.794], 'crude_OR_models_with_both': 0.685, 'MH_OR_by_model': 0.728, 'per_model_OR': {'mythos-4b-champion:q4km': 0.87, 'mythos-nemotron-nano-9b-v2:q5km': 0.832, 'qwen3:4b': 0.354, 'qwen3:14b': 0.88}, 'per_model_n': {'mythos-4b-champion:q4km': (720, 1198), 'mythos-nemotron-nano-9b-v2:q5km': (556, 655), 'qwen3:4b': (750, 1106), 'qwen3:14b': (597, 924)}}
+  no_cap     {'crude_OR_all_models': 0.951, 'crude_CI': [0.757, 1.195], 'crude_OR_models_with_both': 0.951, 'MH_OR_by_model': 0.926, 'per_model_OR': {'mythos-4b-champion:q4km': 0.87, 'mythos-nemotron-nano-9b-v2:q5km': 1.434, 'qwen3:4b': 1.598, 'qwen3:14b': 0.88}, 'per_model_n': {'mythos-4b-champion:q4km': (720, 1198), 'mythos-nemotron-nano-9b-v2:q5km': (328, 426), 'qwen3:4b': (28, 54), 'qwen3:14b': (597, 924)}}
+
+wrote G:\chappy_ai_storage\handoff\judge2026_submit_camera_ready_audit_v1\B_TEMP_TRUNC_RESULT_V1.json

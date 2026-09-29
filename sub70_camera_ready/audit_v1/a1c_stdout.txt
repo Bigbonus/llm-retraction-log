@@ -1,0 +1,13 @@
+design cells in pooled structure: 166
+1.0 {'between_mean': 1.029, 'between_sd': 0.044, 'reject_rate_chi2_a05': 0.197, 'paper_estimator_mean': 1.0345}
+1.1 {'between_mean': 1.098, 'between_sd': 0.044, 'reject_rate_chi2_a05': 0.753, 'paper_estimator_mean': 1.0345}
+1.25 {'between_mean': 1.201, 'between_sd': 0.052, 'reject_rate_chi2_a05': 0.993, 'paper_estimator_mean': 1.0345}
+1.5 {'between_mean': 1.383, 'between_sd': 0.063, 'reject_rate_chi2_a05': 1.0, 'paper_estimator_mean': 1.0345}
+2.0 {'between_mean': 1.74, 'between_sd': 0.072, 'reject_rate_chi2_a05': 1.0, 'paper_estimator_mean': 1.0344}
+null-calibrated power 1.0 0.05
+null-calibrated power 1.1 0.52
+null-calibrated power 1.25 0.98
+null-calibrated power 1.5 1.0
+null-calibrated power 2.0 1.0
+threshold 1.0989906234878561
+wrote G:\chappy_ai_storage\handoff\judge2026_submit_camera_ready_audit_v1\A_PHI_FINE_POWER_V1.json

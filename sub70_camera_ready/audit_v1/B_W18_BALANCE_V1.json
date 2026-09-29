@@ -1,0 +1,156 @@
+{
+ "id": "SUB70_AUDIT_B_W18_BALANCE_V1",
+ "composition": {
+  "hf.co/unsloth/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF:Q4_K_M|0.0": {
+   "R0_unrelated": 4
+  },
+  "mythos-4b-champion:q4km|0.0": {
+   "R0_unrelated": 240,
+   "R1_format": 240,
+   "R2_field": 240,
+   "R3_samefield": 240,
+   "R4_overwrite": 240
+  },
+  "mythos-4b-champion:q4km|0.7": {
+   "R0_unrelated": 144,
+   "R1_format": 144,
+   "R2_field": 144,
+   "R3_samefield": 144,
+   "R4_overwrite": 144
+  },
+  "mythos-nemotron-nano-9b-v2:q5km|0.0": {
+   "R0_unrelated": 192,
+   "R1_format": 192,
+   "R2_field": 192,
+   "R3_samefield": 168,
+   "R4_overwrite": 144
+  },
+  "mythos-nemotron-nano-9b-v2:q5km|0.7": {
+   "R0_unrelated": 192,
+   "R1_format": 192,
+   "R2_field": 192,
+   "R3_samefield": 164,
+   "R4_overwrite": 144
+  },
+  "qwen3:14b|0.0": {
+   "R0_unrelated": 216,
+   "R1_format": 216,
+   "R2_field": 200,
+   "R3_samefield": 168,
+   "R4_overwrite": 133
+  },
+  "qwen3:14b|0.7": {
+   "R0_unrelated": 144,
+   "R1_format": 144,
+   "R2_field": 120,
+   "R3_samefield": 96,
+   "R4_overwrite": 96
+  },
+  "qwen3:4b|0.0": {
+   "R0_unrelated": 248,
+   "R1_format": 216,
+   "R2_field": 216,
+   "R3_samefield": 216,
+   "R4_overwrite": 216
+  },
+  "qwen3:4b|0.7": {
+   "R0_unrelated": 176,
+   "R1_format": 144,
+   "R2_field": 144,
+   "R3_samefield": 144,
+   "R4_overwrite": 144
+  }
+ },
+ "mh": {
+  "all_scored|all_models": {
+   "MH_OR": 0.604,
+   "strata": 120,
+   "rows": 6506
+  },
+  "all_scored|champion+14b": {
+   "MH_OR": 0.827,
+   "strata": 60,
+   "rows": 3439
+  },
+  "all_scored|qwen3:4b": {
+   "MH_OR": 0.149,
+   "strata": 30,
+   "rows": 1856
+  },
+  "all_scored|nemotron9b": {
+   "MH_OR": 0.778,
+   "strata": 30,
+   "rows": 1211
+  },
+  "no_cap|all_models": {
+   "MH_OR": 0.895,
+   "strata": 93,
+   "rows": 4247
+  },
+  "no_cap|champion+14b": {
+   "MH_OR": 0.827,
+   "strata": 60,
+   "rows": 3439
+  },
+  "no_cap|qwen3:4b": {
+   "MH_OR": null,
+   "strata": 6,
+   "rows": 72
+  },
+  "no_cap|nemotron9b": {
+   "MH_OR": 1.172,
+   "strata": 27,
+   "rows": 736
+  }
+ },
+ "cap_by_temp": {
+  "mythos-4b-champion:q4km": {
+   "T0": [
+    0,
+    1200,
+    0.0
+   ],
+   "T0.7": [
+    0,
+    720,
+    0.0
+   ]
+  },
+  "mythos-nemotron-nano-9b-v2:q5km": {
+   "T0": [
+    459,
+    888,
+    0.5169
+   ],
+   "T0.7": [
+    555,
+    884,
+    0.6278
+   ]
+  },
+  "qwen3:14b": {
+   "T0": [
+    0,
+    933,
+    0.0
+   ],
+   "T0.7": [
+    0,
+    600,
+    0.0
+   ]
+  },
+  "qwen3:4b": {
+   "T0": [
+    1052,
+    1112,
+    0.946
+   ],
+   "T0.7": [
+    722,
+    752,
+    0.9601
+   ]
+  }
+ }
+}

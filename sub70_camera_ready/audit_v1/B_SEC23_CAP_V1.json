@@ -1,0 +1,43 @@
+{
+ "id": "SUB70_AUDIT_B_SEC23_CAP_V1",
+ "calibration": {
+  "rows_9b": 1772,
+  "acc_9b": 0.46,
+  "trunc_9b": 0.31,
+  "noid_9b": 0.21
+ },
+ "match": true,
+ "others_acc": {
+  "mythos-4b-champion:q4km": 0.887,
+  "qwen3:4b": 0.927,
+  "qwen3:14b": 0.938
+ },
+ "others_nonanswer_by_verdict": {
+  "mythos-4b-champion:q4km": 0.0,
+  "qwen3:4b": 0.0145,
+  "qwen3:14b": 0.0
+ },
+ "length_cap_rate": {
+  "mythos-4b-champion:q4km": [
+   0,
+   1920,
+   0.0
+  ],
+  "qwen3:4b": [
+   1774,
+   1864,
+   0.9517
+  ],
+  "qwen3:14b": [
+   0,
+   1533,
+   0.0
+  ],
+  "mythos-nemotron-nano-9b-v2:q5km": [
+   1014,
+   1772,
+   0.5722
+  ]
+ },
+ "known_bad_no_cutoff_9b_rows": 2942
+}

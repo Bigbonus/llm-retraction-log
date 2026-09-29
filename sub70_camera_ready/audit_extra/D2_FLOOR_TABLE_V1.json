@@ -1,0 +1,61 @@
+{
+ "id": "SUB70_CR_D2_FLOOR_TABLE_V1",
+ "phi_corrected": 1.076,
+ "caseE": {
+  "R3_ok_n": [
+   384,
+   384
+  ],
+  "R4_ok_n": [
+   169,
+   384
+  ],
+  "diff": 0.56
+ },
+ "rows": {
+  "phi_1.01_paper": {
+   "table": [
+    0.82,
+    0.71,
+    0.58,
+    0.41,
+    0.29,
+    0.24,
+    0.17,
+    0.12
+   ],
+   "caseG_n6": 0.58,
+   "caseH_n4": 0.71,
+   "caseE": 0.07
+  },
+  "phi_corrected": {
+   "table": [
+    0.85,
+    0.73,
+    0.6,
+    0.42,
+    0.3,
+    0.24,
+    0.17,
+    0.12
+   ],
+   "caseG_n6": 0.6,
+   "caseH_n4": 0.73,
+   "caseE": 0.07
+  }
+ },
+ "calibration_match": true,
+ "known_bad_factor1": {
+  "table": [
+   0.41,
+   0.36,
+   0.29,
+   0.21,
+   0.15,
+   0.12,
+   0.08,
+   0.06
+  ],
+  "reproduces_paper": false
+ }
+}

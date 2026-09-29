@@ -1,0 +1,43 @@
+{
+ "id": "SUB70_AUDIT_A_PHI_FINE_POWER_V1",
+ "cells": 166,
+ "nsim": 300,
+ "rows": {
+  "1.0": {
+   "between_mean": 1.029,
+   "between_sd": 0.044,
+   "reject_rate_chi2_a05": 0.197,
+   "paper_estimator_mean": 1.0345,
+   "power_null_calibrated_a05": 0.05
+  },
+  "1.1": {
+   "between_mean": 1.098,
+   "between_sd": 0.044,
+   "reject_rate_chi2_a05": 0.753,
+   "paper_estimator_mean": 1.0345,
+   "power_null_calibrated_a05": 0.52
+  },
+  "1.25": {
+   "between_mean": 1.201,
+   "between_sd": 0.052,
+   "reject_rate_chi2_a05": 0.993,
+   "paper_estimator_mean": 1.0345,
+   "power_null_calibrated_a05": 0.98
+  },
+  "1.5": {
+   "between_mean": 1.383,
+   "between_sd": 0.063,
+   "reject_rate_chi2_a05": 1.0,
+   "paper_estimator_mean": 1.0345,
+   "power_null_calibrated_a05": 1.0
+  },
+  "2.0": {
+   "between_mean": 1.74,
+   "between_sd": 0.072,
+   "reject_rate_chi2_a05": 1.0,
+   "paper_estimator_mean": 1.0344,
+   "power_null_calibrated_a05": 1.0
+  }
+ },
+ "null_calibrated_threshold_95pct": 1.099
+}

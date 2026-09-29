@@ -1,0 +1,4 @@
+calibration (paper 2.3): {'rows_9b': 1772, 'acc_9b': 0.46, 'trunc_9b': 0.31, 'noid_9b': 0.21} others acc {'mythos-4b-champion:q4km': 0.887, 'qwen3:4b': 0.927, 'qwen3:14b': 0.938} others non-answer {'mythos-4b-champion:q4km': 0.0, 'qwen3:4b': 0.0145, 'qwen3:14b': 0.0} MATCH
+length-cap rate (done_reason == length): {'mythos-4b-champion:q4km': [0, 1920, 0.0], 'qwen3:4b': [1774, 1864, 0.9517], 'qwen3:14b': [0, 1533, 0.0], 'mythos-nemotron-nano-9b-v2:q5km': [1014, 1772, 0.5722]}
+known-bad (no cutoff): 9B rows 2942 reproduces 1772: False
+wrote G:\chappy_ai_storage\handoff\judge2026_submit_camera_ready_audit_v1\B_SEC23_CAP_V1.json

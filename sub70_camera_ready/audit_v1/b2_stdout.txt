@@ -1,0 +1,25 @@
+### composition (rows by relation)
+  hf.co/unsloth/NVIDIA-Nemotron-3.5- T=0.0 {'R0_unrelated': 4}
+  mythos-4b-champion:q4km            T=0.0 {'R0_unrelated': 240, 'R1_format': 240, 'R2_field': 240, 'R3_samefield': 240, 'R4_overwrite': 240}
+  mythos-4b-champion:q4km            T=0.7 {'R0_unrelated': 144, 'R1_format': 144, 'R2_field': 144, 'R3_samefield': 144, 'R4_overwrite': 144}
+  mythos-nemotron-nano-9b-v2:q5km    T=0.0 {'R0_unrelated': 192, 'R1_format': 192, 'R2_field': 192, 'R3_samefield': 168, 'R4_overwrite': 144}
+  mythos-nemotron-nano-9b-v2:q5km    T=0.7 {'R0_unrelated': 192, 'R1_format': 192, 'R2_field': 192, 'R3_samefield': 164, 'R4_overwrite': 144}
+  qwen3:14b                          T=0.0 {'R0_unrelated': 216, 'R1_format': 216, 'R2_field': 200, 'R3_samefield': 168, 'R4_overwrite': 133}
+  qwen3:14b                          T=0.7 {'R0_unrelated': 144, 'R1_format': 144, 'R2_field': 120, 'R3_samefield': 96, 'R4_overwrite': 96}
+  qwen3:4b                           T=0.0 {'R0_unrelated': 248, 'R1_format': 216, 'R2_field': 216, 'R3_samefield': 216, 'R4_overwrite': 216}
+  qwen3:4b                           T=0.7 {'R0_unrelated': 176, 'R1_format': 144, 'R2_field': 144, 'R3_samefield': 144, 'R4_overwrite': 144}
+  MH OR all_scored all_models    0.604 (strata 120, rows 6506)
+  MH OR all_scored champion+14b  0.827 (strata 60, rows 3439)
+  MH OR all_scored qwen3:4b      0.149 (strata 30, rows 1856)
+  MH OR all_scored nemotron9b    0.778 (strata 30, rows 1211)
+  MH OR no_cap     all_models    0.895 (strata 93, rows 4247)
+  MH OR no_cap     champion+14b  0.827 (strata 60, rows 3439)
+  MH OR no_cap     qwen3:4b      None (strata 6, rows 72)
+  MH OR no_cap     nemotron9b    1.172 (strata 27, rows 736)
+
+### cap-hit rate by temperature, per model (rows in strata present at both temps)
+  mythos-4b-champion:q4km            T0 0/1200 (0.000)  T0.7 0/720 (0.000)
+  mythos-nemotron-nano-9b-v2:q5km    T0 459/888 (0.517)  T0.7 555/884 (0.628)
+  qwen3:14b                          T0 0/933 (0.000)  T0.7 0/600 (0.000)
+  qwen3:4b                           T0 1052/1112 (0.946)  T0.7 722/752 (0.960)
+wrote G:\chappy_ai_storage\handoff\judge2026_submit_camera_ready_audit_v1\B_W18_BALANCE_V1.json

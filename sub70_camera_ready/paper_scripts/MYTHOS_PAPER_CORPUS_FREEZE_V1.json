@@ -1,0 +1,237 @@
+{
+ "id": "PAPER_CORPUS_FREEZE_V1",
+ "cutoff_ts": "2026-08-22T09:00:00",
+ "rule": "この時刻以前の ts を持つ行だけを使う。ファイル全体の SHA256 は凍結後も波が追記されうるため、**行の再構成は ts で行う**。",
+ "min_rows_per_model": 100,
+ "why_min_rows": "supervisor が起こした 5 器目が 4 行だけ混じり、『他 3 器』という記述を壊した。少数行の器を黙って混ぜない。**除外したことは表に残す。**",
+ "waves": 20,
+ "rows_total": 79021,
+ "rows_scored": 77293,
+ "files": {
+  "mythos_battery_wave6_v1.jsonl": {
+   "sha256_full_file": "463c8bbfda884b8ebcc6d9a904f660a6b38836abea4ee7afadda8684b947a9ee",
+   "rows_in_file": 4840,
+   "rows_at_or_before_cutoff": 4840,
+   "models": {
+    "mythos-4b-champion:q4km": 2420,
+    "qwen3:14b": 2420
+   },
+   "models_below_min": {}
+  },
+  "mythos_deep_wave7_v1.jsonl": {
+   "sha256_full_file": "9548ebb9f76cb60cf02ce2edc3cc55d71617e06c3dc2b2a6eae17c866d0041cb",
+   "rows_in_file": 15564,
+   "rows_at_or_before_cutoff": 15564,
+   "models": {
+    "mythos-4b-champion:q4km": 5908,
+    "mythos-nemotron-nano-9b-v2:q5km": 3852,
+    "qwen3:14b": 5804
+   },
+   "models_below_min": {}
+  },
+  "mythos_exploration_wave2_v1.jsonl": {
+   "sha256_full_file": "951aeb54b2859603591c07e939ca5056c6b7af310fde3a0087ec5fc062319c29",
+   "rows_in_file": 1872,
+   "rows_at_or_before_cutoff": 1872,
+   "models": {
+    "mythos-4b-champion:q4km": 936,
+    "qwen3:14b": 936
+   },
+   "models_below_min": {}
+  },
+  "mythos_exploration_wave3_v1.jsonl": {
+   "sha256_full_file": "117af3dda90f259400312ba363227c64b3cbdffe4a24d3193f152526451c76eb",
+   "rows_in_file": 1152,
+   "rows_at_or_before_cutoff": 1152,
+   "models": {
+    "mythos-4b-champion:q4km": 504,
+    "qwen3:14b": 504,
+    "mythos-nemotron-nano-9b-v2:q5km": 144
+   },
+   "models_below_min": {}
+  },
+  "mythos_formwidth_wave17_v1.jsonl": {
+   "sha256_full_file": "367dd481c1e93947f65db91a3edf5c7dda588f25aa2b1eefd8df7e9283b73816",
+   "rows_in_file": 520,
+   "rows_at_or_before_cutoff": 520,
+   "models": {
+    "qwen3:4b": 260,
+    "mythos-4b-champion:q4km": 260
+   },
+   "models_below_min": {}
+  },
+  "mythos_frontier_wave14_v1.jsonl": {
+   "sha256_full_file": "3a0a03c2a24d84eb1e5663e206a1c5493a7d0a1fc60aa30c63c04bf32e786c83",
+   "rows_in_file": 3420,
+   "rows_at_or_before_cutoff": 3420,
+   "models": {
+    "mythos-4b-champion:q4km": 1696,
+    "qwen3:14b": 1684,
+    "qwen3:4b": 40
+   },
+   "models_below_min": {
+    "qwen3:4b": 40
+   }
+  },
+  "mythos_lepsilon_decisive_wave9_v1.jsonl": {
+   "sha256_full_file": "69a90e458a9f8c69500e5729b12ef6f6c54976b4032ae991643d81979965159f",
+   "rows_in_file": 15976,
+   "rows_at_or_before_cutoff": 15976,
+   "models": {
+    "mythos-4b-champion:q4km": 6756,
+    "mythos-nemotron-nano-9b-v2:q5km": 3876,
+    "qwen3:14b": 5344
+   },
+   "models_below_min": {}
+  },
+  "mythos_lever_wave16_v1.jsonl": {
+   "sha256_full_file": "d5ec5987ec46a9d704881a4551770c8e86eb02889384a174a23bf4cfa7bb6c4a",
+   "rows_in_file": 783,
+   "rows_at_or_before_cutoff": 783,
+   "models": {
+    "mythos-4b-champion:q4km": 304,
+    "qwen3:4b": 256,
+    "qwen3:14b": 223
+   },
+   "models_below_min": {}
+  },
+  "mythos_new_ground_wave8_v1.jsonl": {
+   "sha256_full_file": "6d2e349f9d3fcc2cb9b680b469a46cfc7c5febaa35a32598e8a924b3aecee08e",
+   "rows_in_file": 6112,
+   "rows_at_or_before_cutoff": 5098,
+   "models": {
+    "mythos-4b-champion:q4km": 1702,
+    "mythos-nemotron-nano-9b-v2:q5km": 1698,
+    "qwen3:14b": 1698
+   },
+   "models_below_min": {}
+  },
+  "mythos_reading_derived_wave11_v1.jsonl": {
+   "sha256_full_file": "d594c36338be43739a1589497e69f4eefa860f392f979ebe7ea8d844dc77df92",
+   "rows_in_file": 3616,
+   "rows_at_or_before_cutoff": 3616,
+   "models": {
+    "mythos-4b-champion:q4km": 1361,
+    "mythos-nemotron-nano-9b-v2:q5km": 924,
+    "qwen3:14b": 1331
+   },
+   "models_below_min": {}
+  },
+  "mythos_relation_hard_wave19_v1.jsonl": {
+   "sha256_full_file": "0a12ff4ab317905e38bded04493de68d4b877f3543c3aea979d89dc11ca952ad",
+   "rows_in_file": 2681,
+   "rows_at_or_before_cutoff": 2681,
+   "models": {
+    "mythos-4b-champion:q4km": 1020,
+    "qwen3:4b": 941,
+    "qwen3:14b": 720
+   },
+   "models_below_min": {}
+  },
+  "mythos_relation_wave18_v1.jsonl": {
+   "sha256_full_file": "26cc63e79acb341309f764398230ad5dab5fbc63fcef0d1c5318c5f0eaed232a",
+   "rows_in_file": 7093,
+   "rows_at_or_before_cutoff": 7093,
+   "models": {
+    "mythos-4b-champion:q4km": 1920,
+    "qwen3:4b": 1864,
+    "qwen3:14b": 1533,
+    "mythos-nemotron-nano-9b-v2:q5km": 1772,
+    "hf.co/unsloth/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF:Q4_K_M": 4
+   },
+   "models_below_min": {
+    "hf.co/unsloth/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF:Q4_K_M": 4
+   }
+  },
+  "mythos_replication_wave4_v1.jsonl": {
+   "sha256_full_file": "85d926a8ad3e83c3c8f4cf466bff3be7ac93cee1283dc15ee0c95c2c8bfe690c",
+   "rows_in_file": 1152,
+   "rows_at_or_before_cutoff": 1152,
+   "models": {
+    "mythos-4b-champion:q4km": 576,
+    "qwen3:14b": 576
+   },
+   "models_below_min": {}
+  },
+  "mythos_screen_v1.jsonl": {
+   "sha256_full_file": "c82d0b5ce0a0f21eaf5193a536eae2241383341af491fff1acc1d3c06ef80fb7",
+   "rows_in_file": 2375,
+   "rows_at_or_before_cutoff": 2375,
+   "models": {
+    "mythos-4b-champion:q4km": 2227,
+    "qwen3:4b": 148
+   },
+   "models_below_min": {}
+  },
+  "mythos_steps_probe_v1.jsonl": {
+   "sha256_full_file": "d90b7bc3960a44932ac68bf8f86d19ca4dc046a94b55ad6155523d578133b696",
+   "rows_in_file": 72,
+   "rows_at_or_before_cutoff": 72,
+   "models": {
+    "mythos-4b-champion:q4km": 24,
+    "qwen3:4b": 24,
+    "qwen3:14b": 24
+   },
+   "models_below_min": {
+    "mythos-4b-champion:q4km": 24,
+    "qwen3:4b": 24,
+    "qwen3:14b": 24
+   }
+  },
+  "mythos_technique_wave5_v1.jsonl": {
+   "sha256_full_file": "dc074c93912aa89ab6267ff8ae4e91ea7a2f4b3228de4cdeb217dabf1e747c60",
+   "rows_in_file": 1715,
+   "rows_at_or_before_cutoff": 1715,
+   "models": {
+    "mythos-4b-champion:q4km": 911,
+    "qwen3:14b": 804
+   },
+   "models_below_min": {}
+  },
+  "mythos_transfer_wave13_v1.jsonl": {
+   "sha256_full_file": "137c155dfc0d7b061abe79f472130f1c295e22fba4324b2b3fb138cf1229f89b",
+   "rows_in_file": 3386,
+   "rows_at_or_before_cutoff": 3386,
+   "models": {
+    "qwen3:4b": 1714,
+    "mythos-4b-champion:q4km": 1672
+   },
+   "models_below_min": {}
+  },
+  "mythos_type_decomposition_wave10_v1.jsonl": {
+   "sha256_full_file": "f3d8a64b14b49b3f6d4c0d1d3f8e1394551ac91bb43554b82bb7d688653bc572",
+   "rows_in_file": 3955,
+   "rows_at_or_before_cutoff": 3955,
+   "models": {
+    "mythos-4b-champion:q4km": 1324,
+    "mythos-nemotron-nano-9b-v2:q5km": 1317,
+    "qwen3:14b": 1314
+   },
+   "models_below_min": {}
+  },
+  "mythos_unexplored_wave12_v1.jsonl": {
+   "sha256_full_file": "01e885cfeb53d5ae6ad1f61c9e6de3a66e05d4ca22bbf22fedb61fa51c026765",
+   "rows_in_file": 3030,
+   "rows_at_or_before_cutoff": 3030,
+   "models": {
+    "mythos-4b-champion:q4km": 1518,
+    "qwen3:14b": 1500,
+    "qwen3:4b": 12
+   },
+   "models_below_min": {
+    "qwen3:4b": 12
+   }
+  },
+  "mythos_withhold_wave15_v1.jsonl": {
+   "sha256_full_file": "4a3267ca6fe9ef0bf1c3de49a3a6832feb04810eb007f8f6aa786696c5378a28",
+   "rows_in_file": 721,
+   "rows_at_or_before_cutoff": 721,
+   "models": {
+    "mythos-4b-champion:q4km": 261,
+    "qwen3:4b": 240,
+    "qwen3:14b": 220
+   },
+   "models_below_min": {}
+  }
+ }
+}

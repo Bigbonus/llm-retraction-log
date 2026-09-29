@@ -1,0 +1,127 @@
+### 1. calibration
+  W18 plain R4 champion 0.4401 (n 384) paper 0.44 | W19 near_ids R4 champion 0.9815 (n 108) paper 0.98
+  leak table (P(majority=gold), P(majority=one of the distractors)): {1: (0.0, 1.0), 3: (0.9, 0.1), 8: (1.0, 0.0), 20: (1.0, 0.0), 40: (1.0, 0.0), 80: (1.0, 0.0)}
+  known-bad (independent random ids): {1: (0.0, 1.0), 3: (0.0, 0.555), 8: (0.0, 0.0), 20: (0.0, 0.0), 40: (0.0, 0.0), 80: (0.0, 0.0)}
+
+### 2. W19 conditions present (frozen rows)
+   ('near_ids', 'mythos-4b-champion:q4km', 0.0) 540
+   ('near_ids', 'qwen3:14b', 0.0) 360
+   ('near_ids', 'qwen3:4b', 0.0) 407
+   ('pos_head', 'mythos-4b-champion:q4km', 0.0) 120
+   ('pos_head', 'qwen3:14b', 0.0) 180
+   ('pos_head', 'qwen3:4b', 0.0) 180
+   ('two_hop', 'mythos-4b-champion:q4km', 0.0) 360
+   ('two_hop', 'qwen3:14b', 0.0) 180
+   ('two_hop', 'qwen3:4b', 0.0) 354
+
+### 3. per k: accuracy and verdicts, near_ids vs plain (W18) vs pos_head, R4 and R0-R3
+  W18_plain     mythos-4b-champion:q4km  R4=False k=1   scored  264 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W18_plain     mythos-4b-champion:q4km  R4=False k=20  scored  264 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W18_plain     mythos-4b-champion:q4km  R4=False k=3   scored  264 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W18_plain     mythos-4b-champion:q4km  R4=False k=40  scored  239 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W18_plain     mythos-4b-champion:q4km  R4=False k=8   scored  264 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W18_plain     mythos-4b-champion:q4km  R4=False k=80  scored  239 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W18_plain     mythos-4b-champion:q4km  R4=True  k=1   scored   66 acc 0.939  OLDER 4 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W18_plain     mythos-4b-champion:q4km  R4=True  k=20  scored   66 acc 0.258  OLDER 49 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W18_plain     mythos-4b-champion:q4km  R4=True  k=3   scored   66 acc 0.985  OLDER 1 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W18_plain     mythos-4b-champion:q4km  R4=True  k=40  scored   60 acc 0.117  OLDER 53 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W18_plain     mythos-4b-champion:q4km  R4=True  k=8   scored   66 acc 0.258  OLDER 49 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W18_plain     mythos-4b-champion:q4km  R4=True  k=80  scored   60 acc 0.017  OLDER 59 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W18_plain     qwen3:14b                R4=False k=1   scored  222 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W18_plain     qwen3:14b                R4=False k=20  scored  216 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W18_plain     qwen3:14b                R4=False k=3   scored  221 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W18_plain     qwen3:14b                R4=False k=40  scored  208 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W18_plain     qwen3:14b                R4=False k=8   scored  223 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W18_plain     qwen3:14b                R4=False k=80  scored  205 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W18_plain     qwen3:14b                R4=True  k=1   scored   44 acc 0.591  OLDER 18 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W18_plain     qwen3:14b                R4=True  k=20  scored   33 acc 0.394  OLDER 20 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W18_plain     qwen3:14b                R4=True  k=3   scored   44 acc 0.727  OLDER 12 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W18_plain     qwen3:14b                R4=True  k=40  scored   32 acc 0.656  OLDER 11 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W18_plain     qwen3:14b                R4=True  k=8   scored   41 acc 0.707  OLDER 12 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W18_plain     qwen3:14b                R4=True  k=80  scored   32 acc 0.688  OLDER 10 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W18_plain     qwen3:4b                 R4=False k=1   scored  256 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 188 cap 230
+  W18_plain     qwen3:4b                 R4=False k=20  scored  253 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 79 cap 248
+  W18_plain     qwen3:4b                 R4=False k=3   scored  256 acc 0.984  OLDER 3 OTHER_ID 0 NO_ID 1  multi-id replies 131 cap 252
+  W18_plain     qwen3:4b                 R4=False k=40  scored  240 acc 0.988  OLDER 1 OTHER_ID 0 NO_ID 2  multi-id replies 65 cap 223
+  W18_plain     qwen3:4b                 R4=False k=8   scored  256 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 95 cap 249
+  W18_plain     qwen3:4b                 R4=False k=80  scored  237 acc 0.992  OLDER 2 OTHER_ID 0 NO_ID 0  multi-id replies 55 cap 214
+  W18_plain     qwen3:4b                 R4=True  k=1   scored   60 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 60 cap 60
+  W18_plain     qwen3:4b                 R4=True  k=20  scored   60 acc 0.583  OLDER 19 OTHER_ID 0 NO_ID 6  multi-id replies 23 cap 60
+  W18_plain     qwen3:4b                 R4=True  k=3   scored   59 acc 0.898  OLDER 6 OTHER_ID 0 NO_ID 0  multi-id replies 58 cap 59
+  W18_plain     qwen3:4b                 R4=True  k=40  scored   60 acc 0.550  OLDER 22 OTHER_ID 0 NO_ID 5  multi-id replies 8 cap 60
+  W18_plain     qwen3:4b                 R4=True  k=8   scored   60 acc 0.250  OLDER 40 OTHER_ID 0 NO_ID 5  multi-id replies 28 cap 60
+  W18_plain     qwen3:4b                 R4=True  k=80  scored   59 acc 0.729  OLDER 8 OTHER_ID 0 NO_ID 8  multi-id replies 17 cap 59
+  W19_near_ids  mythos-4b-champion:q4km  R4=False k=1   scored   71 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_near_ids  mythos-4b-champion:q4km  R4=False k=20  scored   72 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_near_ids  mythos-4b-champion:q4km  R4=False k=3   scored   72 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_near_ids  mythos-4b-champion:q4km  R4=False k=40  scored   71 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_near_ids  mythos-4b-champion:q4km  R4=False k=8   scored   72 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_near_ids  mythos-4b-champion:q4km  R4=False k=80  scored   70 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_near_ids  mythos-4b-champion:q4km  R4=True  k=1   scored   18 acc 0.889  OLDER 2 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_near_ids  mythos-4b-champion:q4km  R4=True  k=20  scored   18 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_near_ids  mythos-4b-champion:q4km  R4=True  k=3   scored   18 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_near_ids  mythos-4b-champion:q4km  R4=True  k=40  scored   18 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_near_ids  mythos-4b-champion:q4km  R4=True  k=8   scored   18 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_near_ids  mythos-4b-champion:q4km  R4=True  k=80  scored   18 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_near_ids  qwen3:14b                R4=False k=1   scored   41 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_near_ids  qwen3:14b                R4=False k=20  scored   45 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_near_ids  qwen3:14b                R4=False k=3   scored   40 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_near_ids  qwen3:14b                R4=False k=40  scored   45 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_near_ids  qwen3:14b                R4=False k=8   scored   41 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_near_ids  qwen3:14b                R4=False k=80  scored   43 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_near_ids  qwen3:14b                R4=True  k=1   scored   11 acc 0.727  OLDER 3 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_near_ids  qwen3:14b                R4=True  k=20  scored   12 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_near_ids  qwen3:14b                R4=True  k=3   scored   10 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_near_ids  qwen3:14b                R4=True  k=40  scored    7 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_near_ids  qwen3:14b                R4=True  k=8   scored   12 acc 0.917  OLDER 1 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_near_ids  qwen3:14b                R4=True  k=80  scored    7 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_near_ids  qwen3:4b                 R4=False k=1   scored   60 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 24 cap 55
+  W19_near_ids  qwen3:4b                 R4=False k=20  scored   54 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 5 cap 53
+  W19_near_ids  qwen3:4b                 R4=False k=3   scored   59 acc 0.966  OLDER 2 OTHER_ID 0 NO_ID 0  multi-id replies 26 cap 59
+  W19_near_ids  qwen3:4b                 R4=False k=40  scored   54 acc 0.981  OLDER 1 OTHER_ID 0 NO_ID 0  multi-id replies 2 cap 49
+  W19_near_ids  qwen3:4b                 R4=False k=8   scored   54 acc 0.963  OLDER 2 OTHER_ID 0 NO_ID 0  multi-id replies 18 cap 52
+  W19_near_ids  qwen3:4b                 R4=False k=80  scored   53 acc 0.981  OLDER 1 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 43
+  W19_near_ids  qwen3:4b                 R4=True  k=1   scored   12 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 8 cap 12
+  W19_near_ids  qwen3:4b                 R4=True  k=20  scored   12 acc 0.500  OLDER 4 OTHER_ID 0 NO_ID 2  multi-id replies 2 cap 12
+  W19_near_ids  qwen3:4b                 R4=True  k=3   scored   12 acc 0.917  OLDER 1 OTHER_ID 0 NO_ID 0  multi-id replies 8 cap 12
+  W19_near_ids  qwen3:4b                 R4=True  k=40  scored   12 acc 0.833  OLDER 2 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 12
+  W19_near_ids  qwen3:4b                 R4=True  k=8   scored   12 acc 0.167  OLDER 10 OTHER_ID 0 NO_ID 0  multi-id replies 6 cap 12
+  W19_near_ids  qwen3:4b                 R4=True  k=80  scored   12 acc 0.750  OLDER 2 OTHER_ID 0 NO_ID 1  multi-id replies 1 cap 12
+  W19_pos_head  mythos-4b-champion:q4km  R4=False k=1   scored   16 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_pos_head  mythos-4b-champion:q4km  R4=False k=20  scored   16 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_pos_head  mythos-4b-champion:q4km  R4=False k=3   scored   16 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_pos_head  mythos-4b-champion:q4km  R4=False k=40  scored   16 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_pos_head  mythos-4b-champion:q4km  R4=False k=8   scored   16 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_pos_head  mythos-4b-champion:q4km  R4=False k=80  scored   16 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_pos_head  mythos-4b-champion:q4km  R4=True  k=1   scored    4 acc 0.000  OLDER 4 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_pos_head  mythos-4b-champion:q4km  R4=True  k=20  scored    4 acc 0.000  OLDER 4 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_pos_head  mythos-4b-champion:q4km  R4=True  k=3   scored    4 acc 0.000  OLDER 4 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_pos_head  mythos-4b-champion:q4km  R4=True  k=40  scored    4 acc 0.000  OLDER 4 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_pos_head  mythos-4b-champion:q4km  R4=True  k=8   scored    4 acc 0.000  OLDER 4 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_pos_head  mythos-4b-champion:q4km  R4=True  k=80  scored    4 acc 0.000  OLDER 4 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_pos_head  qwen3:14b                R4=False k=1   scored   21 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_pos_head  qwen3:14b                R4=False k=20  scored   23 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_pos_head  qwen3:14b                R4=False k=3   scored   23 acc 0.913  OLDER 0 OTHER_ID 0 NO_ID 2  multi-id replies 0 cap 0
+  W19_pos_head  qwen3:14b                R4=False k=40  scored   22 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_pos_head  qwen3:14b                R4=False k=8   scored   22 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_pos_head  qwen3:14b                R4=False k=80  scored   23 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_pos_head  qwen3:14b                R4=True  k=1   scored    6 acc 0.833  OLDER 1 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_pos_head  qwen3:14b                R4=True  k=20  scored    6 acc 0.000  OLDER 6 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_pos_head  qwen3:14b                R4=True  k=3   scored    6 acc 0.167  OLDER 5 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_pos_head  qwen3:14b                R4=True  k=40  scored    6 acc 0.000  OLDER 6 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_pos_head  qwen3:14b                R4=True  k=8   scored    6 acc 0.000  OLDER 6 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_pos_head  qwen3:14b                R4=True  k=80  scored    6 acc 0.000  OLDER 6 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 0
+  W19_pos_head  qwen3:4b                 R4=False k=1   scored   24 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 18 cap 20
+  W19_pos_head  qwen3:4b                 R4=False k=20  scored   24 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 22
+  W19_pos_head  qwen3:4b                 R4=False k=3   scored   24 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 8 cap 22
+  W19_pos_head  qwen3:4b                 R4=False k=40  scored   24 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 21
+  W19_pos_head  qwen3:4b                 R4=False k=8   scored   24 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 12 cap 21
+  W19_pos_head  qwen3:4b                 R4=False k=80  scored   24 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 0 cap 21
+  W19_pos_head  qwen3:4b                 R4=True  k=1   scored    6 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 6 cap 6
+  W19_pos_head  qwen3:4b                 R4=True  k=20  scored    6 acc 0.667  OLDER 1 OTHER_ID 0 NO_ID 1  multi-id replies 4 cap 6
+  W19_pos_head  qwen3:4b                 R4=True  k=3   scored    6 acc 1.000  OLDER 0 OTHER_ID 0 NO_ID 0  multi-id replies 6 cap 6
+  W19_pos_head  qwen3:4b                 R4=True  k=40  scored    6 acc 0.833  OLDER 1 OTHER_ID 0 NO_ID 0  multi-id replies 1 cap 6
+  W19_pos_head  qwen3:4b                 R4=True  k=8   scored    6 acc 0.833  OLDER 1 OTHER_ID 0 NO_ID 0  multi-id replies 5 cap 6
+  W19_pos_head  qwen3:4b                 R4=True  k=80  scored    6 acc 0.333  OLDER 4 OTHER_ID 0 NO_ID 0  multi-id replies 2 cap 6
+
+wrote G:\chappy_ai_storage\handoff\judge2026_submit_camera_ready_audit_v1\C_LEAK_RESULT_V1.json

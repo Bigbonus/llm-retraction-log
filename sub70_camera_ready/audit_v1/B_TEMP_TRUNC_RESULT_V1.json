@@ -1,0 +1,291 @@
+{
+ "id": "SUB70_AUDIT_B_TEMP_TRUNC_V1",
+ "w18_sha256": "1cef1c67933a1c5b0914ceb3dc4bfd174c376ed486c2c2d4c4c55f4f928000cf",
+ "calibration": {
+  "w18": [
+   0.69,
+   178.3
+  ],
+  "pooled": {
+   "OR": 0.9567004223744237,
+   "lo": 0.9054343711828049,
+   "hi": 1.0108691776033856,
+   "k": 16,
+   "I2": 43.57107841859869,
+   "tau2": 0.004604280482672444
+  },
+  "match": true,
+  "per_wave_OR": {
+   "mythos_deep_wave7_v1.jsonl": 1.019,
+   "mythos_exploration_wave2_v1.jsonl": 0.972,
+   "mythos_exploration_wave3_v1.jsonl": 1.065,
+   "mythos_formwidth_wave17_v1.jsonl": 0.865,
+   "mythos_frontier_wave14_v1.jsonl": 0.957,
+   "mythos_lepsilon_decisive_wave9_v1.jsonl": 0.975,
+   "mythos_lever_wave16_v1.jsonl": 0.988,
+   "mythos_new_ground_wave8_v1.jsonl": 0.973,
+   "mythos_reading_derived_wave11_v1.jsonl": 1.014,
+   "mythos_relation_wave18_v1.jsonl": 0.685,
+   "mythos_replication_wave4_v1.jsonl": 1.004,
+   "mythos_technique_wave5_v1.jsonl": 0.987,
+   "mythos_transfer_wave13_v1.jsonl": 0.972,
+   "mythos_type_decomposition_wave10_v1.jsonl": 1.077,
+   "mythos_unexplored_wave12_v1.jsonl": 0.896,
+   "mythos_withhold_wave15_v1.jsonl": 0.943
+  }
+ },
+ "known_bad": {
+  "no_cutoff": {
+   "w18_OR": 1.216,
+   "pooled": {
+    "OR": 1.0350481561189404,
+    "lo": 0.9598779166855232,
+    "hi": 1.116105149272027,
+    "k": 16,
+    "I2": 71.43578600890912,
+    "tau2": 0.013921544861289464
+   }
+  },
+  "nonevents_as_failures": {
+   "w18_OR": 0.597,
+   "pooled": {
+    "OR": 0.9340005528727207,
+    "lo": 0.8579316909883707,
+    "hi": 1.0168140912961947,
+    "k": 16,
+    "I2": 77.71765071043102,
+    "tau2": 0.01954966059820746
+   }
+  }
+ },
+ "w18_table": {
+  "hf.co/unsloth/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF:Q4_K_M|0.0": {
+   "rows": 4,
+   "cap_len": 0,
+   "eval_ge_cap": 0,
+   "trunc_novis": 0,
+   "error": 4,
+   "dr_None": 4,
+   "acc_scored": null,
+   "acc_nocap": null,
+   "cap_rate": 0.0
+  },
+  "mythos-4b-champion:q4km|0.0": {
+   "rows": 1200,
+   "cap_len": 0,
+   "eval_ge_cap": 0,
+   "trunc_novis": 0,
+   "error": 2,
+   "scored": 1198,
+   "ok": 1070,
+   "scored_nocap": 1198,
+   "ok_nocap": 1070,
+   "dr_stop": 1198,
+   "dr_None": 2,
+   "acc_scored": 0.8932,
+   "acc_nocap": 0.8932,
+   "cap_rate": 0.0
+  },
+  "mythos-4b-champion:q4km|0.7": {
+   "rows": 720,
+   "cap_len": 0,
+   "eval_ge_cap": 0,
+   "trunc_novis": 0,
+   "error": 0,
+   "scored": 720,
+   "ok": 633,
+   "scored_nocap": 720,
+   "ok_nocap": 633,
+   "dr_stop": 720,
+   "acc_scored": 0.8792,
+   "acc_nocap": 0.8792,
+   "cap_rate": 0.0
+  },
+  "mythos-nemotron-nano-9b-v2:q5km|0.0": {
+   "rows": 888,
+   "cap_len": 459,
+   "eval_ge_cap": 471,
+   "trunc_novis": 230,
+   "error": 3,
+   "scored": 655,
+   "ok": 453,
+   "scored_nocap": 426,
+   "ok_nocap": 404,
+   "dr_stop": 426,
+   "scored_cap": 229,
+   "ok_cap": 49,
+   "dr_length": 459,
+   "dr_None": 3,
+   "acc_scored": 0.6916,
+   "acc_nocap": 0.9484,
+   "cap_rate": 0.5169
+  },
+  "mythos-nemotron-nano-9b-v2:q5km|0.7": {
+   "rows": 884,
+   "cap_len": 555,
+   "eval_ge_cap": 564,
+   "trunc_novis": 327,
+   "error": 1,
+   "scored": 556,
+   "ok": 362,
+   "scored_nocap": 328,
+   "ok_nocap": 316,
+   "dr_stop": 328,
+   "scored_cap": 228,
+   "ok_cap": 46,
+   "dr_length": 555,
+   "dr_None": 1,
+   "acc_scored": 0.6511,
+   "acc_nocap": 0.9634,
+   "cap_rate": 0.6278
+  },
+  "qwen3:14b|0.0": {
+   "rows": 933,
+   "cap_len": 0,
+   "eval_ge_cap": 0,
+   "trunc_novis": 0,
+   "error": 9,
+   "scored": 924,
+   "ok": 876,
+   "scored_nocap": 924,
+   "ok_nocap": 876,
+   "dr_stop": 924,
+   "dr_None": 9,
+   "acc_scored": 0.9481,
+   "acc_nocap": 0.9481,
+   "cap_rate": 0.0
+  },
+  "qwen3:14b|0.7": {
+   "rows": 600,
+   "cap_len": 0,
+   "eval_ge_cap": 0,
+   "trunc_novis": 0,
+   "error": 3,
+   "scored": 597,
+   "ok": 562,
+   "scored_nocap": 597,
+   "ok_nocap": 562,
+   "dr_stop": 597,
+   "dr_None": 3,
+   "acc_scored": 0.9414,
+   "acc_nocap": 0.9414,
+   "cap_rate": 0.0
+  },
+  "qwen3:4b|0.0": {
+   "rows": 1112,
+   "cap_len": 1052,
+   "eval_ge_cap": 1053,
+   "trunc_novis": 0,
+   "error": 6,
+   "scored": 1106,
+   "ok": 1060,
+   "scored_nocap": 54,
+   "ok_nocap": 53,
+   "dr_stop": 53,
+   "scored_cap": 1052,
+   "ok_cap": 1007,
+   "dr_length": 1052,
+   "dr_None": 7,
+   "acc_scored": 0.9584,
+   "acc_nocap": 0.9815,
+   "cap_rate": 0.946
+  },
+  "qwen3:4b|0.7": {
+   "rows": 752,
+   "cap_len": 722,
+   "eval_ge_cap": 722,
+   "trunc_novis": 0,
+   "error": 2,
+   "scored": 750,
+   "ok": 668,
+   "scored_nocap": 28,
+   "ok_nocap": 28,
+   "dr_stop": 28,
+   "scored_cap": 722,
+   "ok_cap": 640,
+   "dr_length": 722,
+   "dr_None": 2,
+   "acc_scored": 0.8907,
+   "acc_nocap": 1.0,
+   "cap_rate": 0.9601
+  }
+ },
+ "w18_temps": [
+  0.0,
+  0.7
+ ],
+ "w18_or": {
+  "models_with_both_temps": [
+   "mythos-4b-champion:q4km",
+   "mythos-nemotron-nano-9b-v2:q5km",
+   "qwen3:14b",
+   "qwen3:4b"
+  ],
+  "all_scored": {
+   "crude_OR_all_models": 0.685,
+   "crude_CI": [
+    0.592,
+    0.794
+   ],
+   "crude_OR_models_with_both": 0.685,
+   "MH_OR_by_model": 0.728,
+   "per_model_OR": {
+    "mythos-4b-champion:q4km": 0.87,
+    "mythos-nemotron-nano-9b-v2:q5km": 0.832,
+    "qwen3:4b": 0.354,
+    "qwen3:14b": 0.88
+   },
+   "per_model_n": {
+    "mythos-4b-champion:q4km": [
+     720,
+     1198
+    ],
+    "mythos-nemotron-nano-9b-v2:q5km": [
+     556,
+     655
+    ],
+    "qwen3:4b": [
+     750,
+     1106
+    ],
+    "qwen3:14b": [
+     597,
+     924
+    ]
+   }
+  },
+  "no_cap": {
+   "crude_OR_all_models": 0.951,
+   "crude_CI": [
+    0.757,
+    1.195
+   ],
+   "crude_OR_models_with_both": 0.951,
+   "MH_OR_by_model": 0.926,
+   "per_model_OR": {
+    "mythos-4b-champion:q4km": 0.87,
+    "mythos-nemotron-nano-9b-v2:q5km": 1.434,
+    "qwen3:4b": 1.598,
+    "qwen3:14b": 0.88
+   },
+   "per_model_n": {
+    "mythos-4b-champion:q4km": [
+     720,
+     1198
+    ],
+    "mythos-nemotron-nano-9b-v2:q5km": [
+     328,
+     426
+    ],
+    "qwen3:4b": [
+     28,
+     54
+    ],
+    "qwen3:14b": [
+     597,
+     924
+    ]
+   }
+  }
+ }
+}

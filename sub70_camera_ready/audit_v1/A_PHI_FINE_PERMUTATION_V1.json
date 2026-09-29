@@ -1,0 +1,78 @@
+{
+ "id": "SUB70_AUDIT_A_PHI_FINE_PERM_V1",
+ "nperm": 1000,
+ "per_wave": {
+  "mythos_battery_wave6_v1.jsonl": {
+   "cells": 18,
+   "phi_between_repeat": 0.964,
+   "df": 126,
+   "X2": 121.4,
+   "p_permutation": 0.6263736263736264,
+   "null_phi_mean": 1.021,
+   "item_reuse": null
+  },
+  "mythos_exploration_wave2_v1.jsonl": {
+   "cells": 9,
+   "phi_between_repeat": 0.857,
+   "df": 63,
+   "X2": 54.0,
+   "p_permutation": 0.8681318681318682,
+   "null_phi_mean": 1.055,
+   "item_reuse": null
+  },
+  "mythos_exploration_wave3_v1.jsonl": {
+   "cells": 25,
+   "phi_between_repeat": 1.147,
+   "df": 175,
+   "X2": 200.7,
+   "p_permutation": 0.18181818181818182,
+   "null_phi_mean": 1.058,
+   "item_reuse": {
+    "design_cells_same_truth_set_every_repeat": 16,
+    "design_cells_truth_set_differs_between_repeats": 0
+   }
+  },
+  "mythos_lepsilon_decisive_wave9_v1.jsonl": {
+   "cells": 81,
+   "phi_between_repeat": 1.131,
+   "df": 777,
+   "X2": 879.1,
+   "p_permutation": 0.052947052947052944,
+   "null_phi_mean": 1.029,
+   "item_reuse": null
+  },
+  "mythos_reading_derived_wave11_v1.jsonl": {
+   "cells": 16,
+   "phi_between_repeat": 1.114,
+   "df": 145,
+   "X2": 161.5,
+   "p_permutation": 0.2967032967032967,
+   "null_phi_mean": 1.035,
+   "item_reuse": null
+  },
+  "mythos_technique_wave5_v1.jsonl": {
+   "cells": 10,
+   "phi_between_repeat": 0.993,
+   "df": 70,
+   "X2": 69.5,
+   "p_permutation": 0.5614385614385614,
+   "null_phi_mean": 1.033,
+   "item_reuse": null
+  },
+  "mythos_type_decomposition_wave10_v1.jsonl": {
+   "cells": 7,
+   "phi_between_repeat": 0.677,
+   "df": 68,
+   "X2": 46.0,
+   "p_permutation": 0.9330669330669331,
+   "null_phi_mean": 1.008,
+   "item_reuse": null
+  }
+ },
+ "pooled": {
+  "phi_between_repeat": 1.076,
+  "df": 1424,
+  "p_permutation": 0.16783216783216784,
+  "null_phi_mean": 1.033
+ }
+}

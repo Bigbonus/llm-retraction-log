@@ -1,0 +1,1362 @@
+{
+ "id": "SUB70_AUDIT_A_PHI_V1",
+ "source_dir": "G:\\visual_rebuild_v2\\06_learning\\mythos_presence_v1",
+ "cutoff": "2026-08-22T09:00:00",
+ "files": {
+  "mythos_battery_wave6_v1.jsonl": "463c8bbfda884b8ebcc6d9a904f660a6b38836abea4ee7afadda8684b947a9ee",
+  "mythos_exploration_wave2_v1.jsonl": "951aeb54b2859603591c07e939ca5056c6b7af310fde3a0087ec5fc062319c29",
+  "mythos_exploration_wave3_v1.jsonl": "117af3dda90f259400312ba363227c64b3cbdffe4a24d3193f152526451c76eb",
+  "mythos_lepsilon_decisive_wave9_v1.jsonl": "7395220c216b741e551db2c71e5df92b3b3506960dca640f50ee0b6127b7e022",
+  "mythos_reading_derived_wave11_v1.jsonl": "d594c36338be43739a1589497e69f4eefa860f392f979ebe7ea8d844dc77df92",
+  "mythos_technique_wave5_v1.jsonl": "dc074c93912aa89ab6267ff8ae4e91ea7a2f4b3228de4cdeb217dabf1e747c60",
+  "mythos_type_decomposition_wave10_v1.jsonl": "f3d8a64b14b49b3f6d4c0d1d3f8e1394551ac91bb43554b82bb7d688653bc572",
+  "mythos_replication_wave4_v1.jsonl": "85d926a8ad3e83c3c8f4cf466bff3be7ac93cee1283dc15ee0c95c2c8bfe690c",
+  "mythos_steps_probe_v1.jsonl": "d90b7bc3960a44932ac68bf8f86d19ca4dc046a94b55ad6155523d578133b696"
+ },
+ "calibration": {
+  "per_wave": {
+   "mythos_battery_wave6_v1.jsonl": {
+    "paper": [
+     40,
+     121.0,
+     1.01
+    ],
+    "recomputed": [
+     40,
+     121.0,
+     1.01
+    ],
+    "match": true
+   },
+   "mythos_exploration_wave2_v1.jsonl": {
+    "paper": [
+     76,
+     20.8,
+     1.04
+    ],
+    "recomputed": [
+     76,
+     20.8,
+     1.04
+    ],
+    "match": true
+   },
+   "mythos_exploration_wave3_v1.jsonl": {
+    "paper": [
+     52,
+     22.1,
+     1.05
+    ],
+    "recomputed": [
+     52,
+     22.1,
+     1.05
+    ],
+    "match": true
+   },
+   "mythos_lepsilon_decisive_wave9_v1.jsonl": {
+    "paper": [
+     12,
+     1302.8,
+     1.0
+    ],
+    "recomputed": [
+     12,
+     1302.8,
+     1.0
+    ],
+    "match": true
+   },
+   "mythos_reading_derived_wave11_v1.jsonl": {
+    "paper": [
+     24,
+     141.7,
+     1.03
+    ],
+    "recomputed": [
+     24,
+     141.7,
+     1.03
+    ],
+    "match": true
+   },
+   "mythos_technique_wave5_v1.jsonl": {
+    "paper": [
+     8,
+     214.4,
+     1.01
+    ],
+    "recomputed": [
+     8,
+     214.4,
+     1.01
+    ],
+    "match": true
+   },
+   "mythos_type_decomposition_wave10_v1.jsonl": {
+    "paper": [
+     6,
+     603.2,
+     1.0
+    ],
+    "recomputed": [
+     6,
+     603.2,
+     1.0
+    ],
+    "match": true
+   },
+   "mythos_replication_wave4_v1.jsonl": {
+    "paper": null,
+    "recomputed": [
+     16,
+     71.9,
+     null
+    ],
+    "match": true
+   },
+   "mythos_steps_probe_v1.jsonl": {
+    "paper": null,
+    "recomputed": null,
+    "match": true
+   }
+  },
+  "median": 1.01,
+  "n_estimates": 7,
+  "all_match": true
+ },
+ "known_bad_no_cutoff": {
+  "per_wave": {
+   "mythos_battery_wave6_v1.jsonl": [
+    40,
+    121.0,
+    1.01
+   ],
+   "mythos_exploration_wave2_v1.jsonl": [
+    76,
+    20.8,
+    1.04
+   ],
+   "mythos_exploration_wave3_v1.jsonl": [
+    52,
+    22.1,
+    1.05
+   ],
+   "mythos_lepsilon_decisive_wave9_v1.jsonl": [
+    14,
+    1399.2,
+    1.0
+   ],
+   "mythos_reading_derived_wave11_v1.jsonl": [
+    24,
+    141.7,
+    1.03
+   ],
+   "mythos_technique_wave5_v1.jsonl": [
+    8,
+    214.4,
+    1.01
+   ],
+   "mythos_type_decomposition_wave10_v1.jsonl": [
+    6,
+    603.2,
+    1.0
+   ]
+  },
+  "n_mismatch": 1
+ },
+ "identity": {
+  "cells": 84,
+  "max_abs_dev": 2.1316282072803006e-14,
+  "phi_from_cell_sizes_only": {
+   "mythos_battery_wave6_v1.jsonl": 1.0109,
+   "mythos_exploration_wave2_v1.jsonl": 1.0389,
+   "mythos_exploration_wave3_v1.jsonl": 1.0506,
+   "mythos_lepsilon_decisive_wave9_v1.jsonl": 1.0009,
+   "mythos_reading_derived_wave11_v1.jsonl": 1.0258,
+   "mythos_technique_wave5_v1.jsonl": 1.0057,
+   "mythos_type_decomposition_wave10_v1.jsonl": 1.0017
+  },
+  "max_possible_cell_stat_at_n_ge_4": 1.3333333333333333
+ },
+ "injection_extreme": {
+  "mythos_battery_wave6_v1.jsonl": {
+   "paper_estimator": 1.014,
+   "group_estimator": 17.29
+  },
+  "mythos_exploration_wave2_v1.jsonl": {
+   "paper_estimator": 1.057,
+   "group_estimator": 2.97
+  },
+  "mythos_exploration_wave3_v1.jsonl": {
+   "paper_estimator": 1.052,
+   "group_estimator": 3.16
+  },
+  "mythos_lepsilon_decisive_wave9_v1.jsonl": {
+   "paper_estimator": 1.001,
+   "group_estimator": 130.28
+  },
+  "mythos_reading_derived_wave11_v1.jsonl": {
+   "paper_estimator": 1.023,
+   "group_estimator": 14.85
+  },
+  "mythos_technique_wave5_v1.jsonl": {
+   "paper_estimator": 1.006,
+   "group_estimator": 30.62
+  },
+  "mythos_type_decomposition_wave10_v1.jsonl": {
+   "paper_estimator": 1.002,
+   "group_estimator": 60.32
+  }
+ },
+ "simulation": {
+  "n_sim": 500,
+  "phis": [
+   1.0,
+   1.25,
+   1.5,
+   2.0,
+   3.0
+  ],
+  "per_wave": {
+   "mythos_battery_wave6_v1.jsonl": {
+    "1.0": {
+     "paper_mean": 1.011,
+     "paper_sd": 0.0005,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 1.015,
+     "group_sd": 0.146,
+     "group_reject_rate_a05": 0.076
+    },
+    "1.25": {
+     "paper_mean": 1.011,
+     "paper_sd": 0.0006,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 1.241,
+     "group_sd": 0.183,
+     "group_reject_rate_a05": 0.464
+    },
+    "1.5": {
+     "paper_mean": 1.011,
+     "paper_sd": 0.0006,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 1.472,
+     "group_sd": 0.218,
+     "group_reject_rate_a05": 0.878
+    },
+    "2.0": {
+     "paper_mean": 1.011,
+     "paper_sd": 0.0006,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 1.92,
+     "group_sd": 0.314,
+     "group_reject_rate_a05": 0.992
+    },
+    "3.0": {
+     "paper_mean": 1.01,
+     "paper_sd": 0.0006,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 2.827,
+     "group_sd": 0.449,
+     "group_reject_rate_a05": 1.0
+    }
+   },
+   "mythos_exploration_wave2_v1.jsonl": {
+    "1.0": {
+     "paper_mean": 1.037,
+     "paper_sd": 0.0019,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 1.051,
+     "group_sd": 0.171,
+     "group_reject_rate_a05": 0.06
+    },
+    "1.25": {
+     "paper_mean": 1.037,
+     "paper_sd": 0.002,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 1.237,
+     "group_sd": 0.2,
+     "group_reject_rate_a05": 0.308
+    },
+    "1.5": {
+     "paper_mean": 1.037,
+     "paper_sd": 0.0019,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 1.457,
+     "group_sd": 0.219,
+     "group_reject_rate_a05": 0.702
+    },
+    "2.0": {
+     "paper_mean": 1.036,
+     "paper_sd": 0.0021,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 1.899,
+     "group_sd": 0.265,
+     "group_reject_rate_a05": 0.992
+    },
+    "3.0": {
+     "paper_mean": 1.035,
+     "paper_sd": 0.0022,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 2.854,
+     "group_sd": 0.289,
+     "group_reject_rate_a05": 1.0
+    }
+   },
+   "mythos_exploration_wave3_v1.jsonl": {
+    "1.0": {
+     "paper_mean": 1.05,
+     "paper_sd": 0.0004,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 1.061,
+     "group_sd": 0.09,
+     "group_reject_rate_a05": 0.102
+    },
+    "1.25": {
+     "paper_mean": 1.05,
+     "paper_sd": 0.0005,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 1.243,
+     "group_sd": 0.107,
+     "group_reject_rate_a05": 0.73
+    },
+    "1.5": {
+     "paper_mean": 1.05,
+     "paper_sd": 0.0005,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 1.438,
+     "group_sd": 0.114,
+     "group_reject_rate_a05": 0.994
+    },
+    "2.0": {
+     "paper_mean": 1.05,
+     "paper_sd": 0.0006,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 1.84,
+     "group_sd": 0.125,
+     "group_reject_rate_a05": 1.0
+    },
+    "3.0": {
+     "paper_mean": 1.049,
+     "paper_sd": 0.0007,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 2.629,
+     "group_sd": 0.109,
+     "group_reject_rate_a05": 1.0
+    }
+   },
+   "mythos_lepsilon_decisive_wave9_v1.jsonl": {
+    "1.0": {
+     "paper_mean": 1.001,
+     "paper_sd": 0.0,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 0.992,
+     "group_sd": 0.157,
+     "group_reject_rate_a05": 0.052
+    },
+    "1.25": {
+     "paper_mean": 1.001,
+     "paper_sd": 0.0,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 1.247,
+     "group_sd": 0.202,
+     "group_reject_rate_a05": 0.406
+    },
+    "1.5": {
+     "paper_mean": 1.001,
+     "paper_sd": 0.0,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 1.487,
+     "group_sd": 0.268,
+     "group_reject_rate_a05": 0.762
+    },
+    "2.0": {
+     "paper_mean": 1.001,
+     "paper_sd": 0.0,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 1.965,
+     "group_sd": 0.352,
+     "group_reject_rate_a05": 0.994
+    },
+    "3.0": {
+     "paper_mean": 1.001,
+     "paper_sd": 0.0,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 2.934,
+     "group_sd": 0.589,
+     "group_reject_rate_a05": 1.0
+    }
+   },
+   "mythos_reading_derived_wave11_v1.jsonl": {
+    "1.0": {
+     "paper_mean": 1.026,
+     "paper_sd": 0.0007,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 1.027,
+     "group_sd": 0.133,
+     "group_reject_rate_a05": 0.048
+    },
+    "1.25": {
+     "paper_mean": 1.026,
+     "paper_sd": 0.0011,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 1.235,
+     "group_sd": 0.17,
+     "group_reject_rate_a05": 0.426
+    },
+    "1.5": {
+     "paper_mean": 1.026,
+     "paper_sd": 0.0012,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 1.454,
+     "group_sd": 0.184,
+     "group_reject_rate_a05": 0.88
+    },
+    "2.0": {
+     "paper_mean": 1.026,
+     "paper_sd": 0.0013,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 1.92,
+     "group_sd": 0.252,
+     "group_reject_rate_a05": 1.0
+    },
+    "3.0": {
+     "paper_mean": 1.025,
+     "paper_sd": 0.0015,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 2.751,
+     "group_sd": 0.359,
+     "group_reject_rate_a05": 1.0
+    }
+   },
+   "mythos_technique_wave5_v1.jsonl": {
+    "1.0": {
+     "paper_mean": 1.006,
+     "paper_sd": 0.0003,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 1.01,
+     "group_sd": 0.233,
+     "group_reject_rate_a05": 0.06
+    },
+    "1.25": {
+     "paper_mean": 1.006,
+     "paper_sd": 0.0003,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 1.236,
+     "group_sd": 0.288,
+     "group_reject_rate_a05": 0.234
+    },
+    "1.5": {
+     "paper_mean": 1.006,
+     "paper_sd": 0.0003,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 1.436,
+     "group_sd": 0.322,
+     "group_reject_rate_a05": 0.51
+    },
+    "2.0": {
+     "paper_mean": 1.006,
+     "paper_sd": 0.0003,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 1.907,
+     "group_sd": 0.512,
+     "group_reject_rate_a05": 0.866
+    },
+    "3.0": {
+     "paper_mean": 1.006,
+     "paper_sd": 0.0003,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 2.832,
+     "group_sd": 0.747,
+     "group_reject_rate_a05": 0.994
+    }
+   },
+   "mythos_type_decomposition_wave10_v1.jsonl": {
+    "1.0": {
+     "paper_mean": 1.002,
+     "paper_sd": 0.0,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 0.994,
+     "group_sd": 0.18,
+     "group_reject_rate_a05": 0.04
+    },
+    "1.25": {
+     "paper_mean": 1.002,
+     "paper_sd": 0.0,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 1.253,
+     "group_sd": 0.241,
+     "group_reject_rate_a05": 0.37
+    },
+    "1.5": {
+     "paper_mean": 1.002,
+     "paper_sd": 0.0,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 1.512,
+     "group_sd": 0.294,
+     "group_reject_rate_a05": 0.738
+    },
+    "2.0": {
+     "paper_mean": 1.002,
+     "paper_sd": 0.0,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 2.012,
+     "group_sd": 0.427,
+     "group_reject_rate_a05": 0.98
+    },
+    "3.0": {
+     "paper_mean": 1.002,
+     "paper_sd": 0.0,
+     "paper_flag_rate_gt_1.15": 0.0,
+     "group_mean": 2.919,
+     "group_sd": 0.597,
+     "group_reject_rate_a05": 1.0
+    }
+   }
+  },
+  "generator": "p_g ~ Beta(mean p_cell, ICC (phi-1)/(m_g-1)); real group sizes and cell p"
+ },
+ "real_between_repeat": {
+  "paper_cells": {
+   "mythos_battery_wave6_v1.jsonl": {
+    "cells": 16,
+    "X2": 81.6,
+    "df": 112,
+    "phi_between_repeat": 0.729,
+    "p_pooled": 0.9862187191954465,
+    "cells_flagged_p_lt_0.01": 1,
+    "expected_false_flags": 0.16,
+    "worst_cells": [
+     {
+      "cell": {
+       "model": "qwen3:14b",
+       "temperature": 0.0,
+       "condition": 0,
+       "persona": false,
+       "answerable": false
+      },
+      "n": 55,
+      "groups": 8,
+      "X2": 26.5,
+      "df": 7,
+      "p": 0.0004102408394252952
+     },
+     {
+      "cell": {
+       "model": "mythos-4b-champion:q4km",
+       "temperature": 0.0,
+       "condition": 1,
+       "json_format": true,
+       "answerable": false
+      },
+      "n": 55,
+      "groups": 8,
+      "X2": 10.6,
+      "df": 7,
+      "p": 0.15665699084066975
+     },
+     {
+      "cell": {
+       "model": "qwen3:14b",
+       "temperature": 0.0,
+       "condition": 20,
+       "answerable": false
+      },
+      "n": 55,
+      "groups": 8,
+      "X2": 7.2,
+      "df": 7,
+      "p": 0.41151844008564625
+     }
+    ]
+   },
+   "mythos_exploration_wave2_v1.jsonl": {
+    "cells": 9,
+    "X2": 35.9,
+    "df": 63,
+    "phi_between_repeat": 0.57,
+    "p_pooled": 0.9976516240035921,
+    "cells_flagged_p_lt_0.01": 0,
+    "expected_false_flags": 0.09,
+    "worst_cells": [
+     {
+      "cell": {
+       "model": "mythos-4b-champion:q4km",
+       "temperature": 0.7,
+       "condition": "partial",
+       "abstain_rule": false
+      },
+      "n": 18,
+      "groups": 8,
+      "X2": 14.7,
+      "df": 7,
+      "p": 0.040371121944369946
+     },
+     {
+      "cell": {
+       "model": "mythos-4b-champion:q4km",
+       "temperature": 0.0,
+       "position": "middle",
+       "lines": 8
+      },
+      "n": 18,
+      "groups": 8,
+      "X2": 5.3,
+      "df": 7,
+      "p": 0.6241188823748278
+     },
+     {
+      "cell": {
+       "model": "mythos-4b-champion:q4km",
+       "temperature": 0.7,
+       "position": "middle",
+       "lines": 8
+      },
+      "n": 18,
+      "groups": 8,
+      "X2": 5.3,
+      "df": 7,
+      "p": 0.6241188823748278
+     }
+    ]
+   },
+   "mythos_exploration_wave3_v1.jsonl": {
+    "cells": 29,
+    "X2": 181.1,
+    "df": 203,
+    "phi_between_repeat": 0.892,
+    "p_pooled": 0.8628265404884203,
+    "cells_flagged_p_lt_0.01": 0,
+    "expected_false_flags": 0.29,
+    "worst_cells": [
+     {
+      "cell": {
+       "model": "mythos-4b-champion:q4km",
+       "temperature": 0.0,
+       "task": "sha_same"
+      },
+      "n": 18,
+      "groups": 8,
+      "X2": 18.0,
+      "df": 7,
+      "p": 0.011970002354029584
+     },
+     {
+      "cell": {
+       "model": "mythos-4b-champion:q4km",
+       "temperature": 0.7,
+       "task": "sha_same"
+      },
+      "n": 18,
+      "groups": 8,
+      "X2": 18.0,
+      "df": 7,
+      "p": 0.011970002354029584
+     },
+     {
+      "cell": {
+       "model": "qwen3:14b",
+       "temperature": 0.0,
+       "mode": "strong"
+      },
+      "n": 18,
+      "groups": 8,
+      "X2": 12.0,
+      "df": 7,
+      "p": 0.10055886850835893
+     }
+    ]
+   },
+   "mythos_lepsilon_decisive_wave9_v1.jsonl": {
+    "cells": 8,
+    "X2": 40.4,
+    "df": 80,
+    "phi_between_repeat": 0.505,
+    "p_pooled": 0.999934520451914,
+    "cells_flagged_p_lt_0.01": 0,
+    "expected_false_flags": 0.08,
+    "worst_cells": [
+     {
+      "cell": {
+       "model": "mythos-nemotron-nano-9b-v2:q5km",
+       "temperature": 0.7,
+       "answerable": true
+      },
+      "n": 965,
+      "groups": 11,
+      "X2": 16.7,
+      "df": 10,
+      "p": 0.0811043961808731
+     },
+     {
+      "cell": {
+       "model": "mythos-4b-champion:q4km",
+       "temperature": 0.7,
+       "answerable": false
+      },
+      "n": 1257,
+      "groups": 11,
+      "X2": 6.4,
+      "df": 10,
+      "p": 0.7777207505646265
+     },
+     {
+      "cell": {
+       "model": "mythos-nemotron-nano-9b-v2:q5km",
+       "temperature": 0.7,
+       "answerable": false
+      },
+      "n": 782,
+      "groups": 11,
+      "X2": 5.1,
+      "df": 10,
+      "p": 0.8850531537172794
+     }
+    ]
+   },
+   "mythos_reading_derived_wave11_v1.jsonl": {
+    "cells": 10,
+    "X2": 39.3,
+    "df": 92,
+    "phi_between_repeat": 0.428,
+    "p_pooled": 0.9999997102557745,
+    "cells_flagged_p_lt_0.01": 0,
+    "expected_false_flags": 0.1,
+    "worst_cells": [
+     {
+      "cell": {
+       "model": "mythos-nemotron-nano-9b-v2:q5km",
+       "temperature": 0.7,
+       "mode": "detect"
+      },
+      "n": 11,
+      "groups": 8,
+      "X2": 8.8,
+      "df": 7,
+      "p": 0.264401613640176
+     },
+     {
+      "cell": {
+       "model": "mythos-nemotron-nano-9b-v2:q5km",
+       "temperature": 0.0,
+       "mode": "detect"
+      },
+      "n": 16,
+      "groups": 8,
+      "X2": 7.1,
+      "df": 7,
+      "p": 0.420722901780509
+     },
+     {
+      "cell": {
+       "model": "mythos-nemotron-nano-9b-v2:q5km",
+       "temperature": 0.0,
+       "mode": "report_told"
+      },
+      "n": 35,
+      "groups": 11,
+      "X2": 9.8,
+      "df": 10,
+      "p": 0.4581753867231114
+     }
+    ]
+   },
+   "mythos_technique_wave5_v1.jsonl": {
+    "cells": 6,
+    "X2": 16.4,
+    "df": 42,
+    "phi_between_repeat": 0.39,
+    "p_pooled": 0.9998725482387226,
+    "cells_flagged_p_lt_0.01": 0,
+    "expected_false_flags": 0.06,
+    "worst_cells": [
+     {
+      "cell": {
+       "model": "mythos-4b-champion:q4km",
+       "temperature": 0.7,
+       "answerable": true
+      },
+      "n": 132,
+      "groups": 8,
+      "X2": 7.7,
+      "df": 7,
+      "p": 0.36446018190469365
+     },
+     {
+      "cell": {
+       "model": "mythos-4b-champion:q4km",
+       "temperature": 0.0,
+       "answerable": true
+      },
+      "n": 318,
+      "groups": 8,
+      "X2": 5.3,
+      "df": 7,
+      "p": 0.6292637003882648
+     },
+     {
+      "cell": {
+       "model": "mythos-4b-champion:q4km",
+       "temperature": 0.0,
+       "answerable": false
+      },
+      "n": 326,
+      "groups": 8,
+      "X2": 1.0,
+      "df": 7,
+      "p": 0.9942404022239854
+     }
+    ]
+   },
+   "mythos_type_decomposition_wave10_v1.jsonl": {
+    "cells": 6,
+    "X2": 6.9,
+    "df": 60,
+    "phi_between_repeat": 0.115,
+    "p_pooled": 1.0,
+    "cells_flagged_p_lt_0.01": 0,
+    "expected_false_flags": 0.06,
+    "worst_cells": [
+     {
+      "cell": {
+       "model": "mythos-nemotron-nano-9b-v2:q5km",
+       "temperature": 0.7
+      },
+      "n": 480,
+      "groups": 11,
+      "X2": 4.9,
+      "df": 10,
+      "p": 0.8972317111172086
+     },
+     {
+      "cell": {
+       "model": "mythos-nemotron-nano-9b-v2:q5km",
+       "temperature": 0.0
+      },
+      "n": 504,
+      "groups": 11,
+      "X2": 1.9,
+      "df": 10,
+      "p": 0.9973142937923571
+     },
+     {
+      "cell": {
+       "model": "mythos-4b-champion:q4km",
+       "temperature": 0.7
+      },
+      "n": 662,
+      "groups": 11,
+      "X2": 0.1,
+      "df": 10,
+      "p": 0.9999999984818371
+     }
+    ]
+   }
+  },
+  "fine_cells": {
+   "mythos_battery_wave6_v1.jsonl": {
+    "cells": 18,
+    "X2": 121.4,
+    "df": 126,
+    "phi_between_repeat": 0.964,
+    "p_pooled": 0.5984021924330224,
+    "cells_flagged_p_lt_0.01": 1,
+    "expected_false_flags": 0.18,
+    "worst_cells": [
+     {
+      "cell": {
+       "model": "qwen3:14b",
+       "temperature": 0.0,
+       "condition": 0,
+       "persona": false,
+       "answerable": false,
+       "experiment": "K",
+       "cell_norm": "K=0 ans=0"
+      },
+      "n": 55,
+      "groups": 8,
+      "X2": 26.5,
+      "df": 7,
+      "p": 0.0004102408394252952
+     },
+     {
+      "cell": {
+       "model": "mythos-4b-champion:q4km",
+       "temperature": 0.0,
+       "condition": 1,
+       "json_format": true,
+       "answerable": false,
+       "experiment": "J",
+       "cell_norm": "J=1 ans=0"
+      },
+      "n": 55,
+      "groups": 8,
+      "X2": 10.6,
+      "df": 7,
+      "p": 0.15665699084066975
+     },
+     {
+      "cell": {
+       "model": "qwen3:14b",
+       "temperature": 0.0,
+       "condition": 1,
+       "answerable": false,
+       "experiment": "Q",
+       "cell_norm": "Q=1 ans=0"
+      },
+      "n": 55,
+      "groups": 8,
+      "X2": 7.3,
+      "df": 7,
+      "p": 0.39530848711811123
+     }
+    ]
+   },
+   "mythos_exploration_wave2_v1.jsonl": {
+    "cells": 9,
+    "X2": 54.0,
+    "df": 63,
+    "phi_between_repeat": 0.857,
+    "p_pooled": 0.7827006480244721,
+    "cells_flagged_p_lt_0.01": 0,
+    "expected_false_flags": 0.09,
+    "worst_cells": [
+     {
+      "cell": {
+       "model": "mythos-4b-champion:q4km",
+       "temperature": 0.7,
+       "condition": "partial",
+       "abstain_rule": false,
+       "experiment": "E3",
+       "cell_norm": "partial abs=0 t=0.7"
+      },
+      "n": 18,
+      "groups": 8,
+      "X2": 14.7,
+      "df": 7,
+      "p": 0.040371121944369946
+     },
+     {
+      "cell": {
+       "model": "mythos-4b-champion:q4km",
+       "temperature": 0.0,
+       "experiment": "E1b",
+       "cell_norm": "sim=same_format t=0.0",
+       "similarity": "same_format"
+      },
+      "n": 18,
+      "groups": 8,
+      "X2": 5.3,
+      "df": 7,
+      "p": 0.6241188823748273
+     },
+     {
+      "cell": {
+       "model": "mythos-4b-champion:q4km",
+       "temperature": 0.7,
+       "experiment": "E1b",
+       "cell_norm": "sim=unrelated t=0.7",
+       "similarity": "unrelated"
+      },
+      "n": 18,
+      "groups": 8,
+      "X2": 5.3,
+      "df": 7,
+      "p": 0.6241188823748278
+     }
+    ]
+   },
+   "mythos_exploration_wave3_v1.jsonl": {
+    "cells": 25,
+    "X2": 200.7,
+    "df": 175,
+    "phi_between_repeat": 1.147,
+    "p_pooled": 0.08904212431317331,
+    "cells_flagged_p_lt_0.01": 0,
+    "expected_false_flags": 0.25,
+    "worst_cells": [
+     {
+      "cell": {
+       "model": "mythos-4b-champion:q4km",
+       "temperature": 0.0,
+       "task": "sha_same",
+       "experiment": "E4",
+       "cell_norm": "sha_same t=0.0"
+      },
+      "n": 18,
+      "groups": 8,
+      "X2": 18.0,
+      "df": 7,
+      "p": 0.011970002354029584
+     },
+     {
+      "cell": {
+       "model": "mythos-4b-champion:q4km",
+       "temperature": 0.7,
+       "task": "sha_same",
+       "experiment": "E4",
+       "cell_norm": "sha_same t=0.7"
+      },
+      "n": 18,
+      "groups": 8,
+      "X2": 18.0,
+      "df": 7,
+      "p": 0.011970002354029584
+     },
+     {
+      "cell": {
+       "model": "mythos-nemotron-nano-9b-v2:q5km",
+       "temperature": 0.0,
+       "abstain_rule": false,
+       "experiment": "E12",
+       "cell_norm": "dis=0 abs=0 t=0.0"
+      },
+      "n": 18,
+      "groups": 8,
+      "X2": 13.2,
+      "df": 7,
+      "p": 0.06738279254423961
+     }
+    ]
+   },
+   "mythos_lepsilon_decisive_wave9_v1.jsonl": {
+    "cells": 81,
+    "X2": 879.1,
+    "df": 777,
+    "phi_between_repeat": 1.131,
+    "p_pooled": 0.006190191715871073,
+    "cells_flagged_p_lt_0.01": 4,
+    "expected_false_flags": 0.81,
+    "worst_cells": [
+     {
+      "cell": {
+       "model": "mythos-4b-champion:q4km",
+       "temperature": 0.7,
+       "answerable": false,
+       "experiment": "L_EPSILON",
+       "cell_norm": "prose d=1 ans=0 t=0.7",
+       "dose": 1
+      },
+      "n": 52,
+      "groups": 11,
+      "X2": 52.0,
+      "df": 10,
+      "p": 1.141115034417995e-07
+     },
+     {
+      "cell": {
+       "model": "mythos-4b-champion:q4km",
+       "temperature": 0.7,
+       "answerable": false,
+       "experiment": "L_EPSILON",
+       "cell_norm": "prose d=3 ans=0 t=0.7",
+       "dose": 3
+      },
+      "n": 52,
+      "groups": 11,
+      "X2": 52.0,
+      "df": 10,
+      "p": 1.141115034417995e-07
+     },
+     {
+      "cell": {
+       "model": "mythos-nemotron-nano-9b-v2:q5km",
+       "temperature": 0.7,
+       "answerable": true,
+       "experiment": "L_EPSILON",
+       "cell_norm": "near_identical d=1 ans=1 t=0.7",
+       "dose": 1
+      },
+      "n": 37,
+      "groups": 11,
+      "X2": 37.0,
+      "df": 10,
+      "p": 5.6593451856787804e-05
+     }
+    ]
+   },
+   "mythos_reading_derived_wave11_v1.jsonl": {
+    "cells": 16,
+    "X2": 161.5,
+    "df": 145,
+    "phi_between_repeat": 1.114,
+    "p_pooled": 0.16543357101977746,
+    "cells_flagged_p_lt_0.01": 1,
+    "expected_false_flags": 0.16,
+    "worst_cells": [
+     {
+      "cell": {
+       "model": "mythos-nemotron-nano-9b-v2:q5km",
+       "temperature": 0.0,
+       "experiment": "B",
+       "cell_norm": "none/prose t=0.0",
+       "derived_from": "shi2023_irrelevant"
+      },
+      "n": 42,
+      "groups": 11,
+      "X2": 42.0,
+      "df": 10,
+      "p": 7.49867835317813e-06
+     },
+     {
+      "cell": {
+       "model": "qwen3:14b",
+       "temperature": 0.7,
+       "experiment": "B",
+       "cell_norm": "ignore/prose t=0.7",
+       "derived_from": "shi2023_irrelevant"
+      },
+      "n": 42,
+      "groups": 11,
+      "X2": 16.6,
+      "df": 10,
+      "p": 0.08436336398522642
+     },
+     {
+      "cell": {
+       "model": "mythos-nemotron-nano-9b-v2:q5km",
+       "temperature": 0.7,
+       "mode": "detect",
+       "experiment": "A",
+       "cell_norm": "detect t=0.7",
+       "derived_from": "coninstruct2025"
+      },
+      "n": 11,
+      "groups": 8,
+      "X2": 8.8,
+      "df": 7,
+      "p": 0.264401613640176
+     }
+    ]
+   },
+   "mythos_technique_wave5_v1.jsonl": {
+    "cells": 10,
+    "X2": 69.5,
+    "df": 70,
+    "phi_between_repeat": 0.993,
+    "p_pooled": 0.49438115092891,
+    "cells_flagged_p_lt_0.01": 0,
+    "expected_false_flags": 0.1,
+    "worst_cells": [
+     {
+      "cell": {
+       "model": "qwen3:14b",
+       "temperature": 0.7,
+       "answerable": false,
+       "experiment": "W5",
+       "cell_norm": "T4 t=0.7",
+       "cell_kind": "A",
+       "technique": "T4"
+      },
+      "n": 18,
+      "groups": 8,
+      "X2": 11.2,
+      "df": 7,
+      "p": 0.1280797963219632
+     },
+     {
+      "cell": {
+       "model": "mythos-4b-champion:q4km",
+       "temperature": 0.7,
+       "answerable": true,
+       "experiment": "W5",
+       "cell_norm": "T2 t=0.7",
+       "cell_kind": "B",
+       "technique": "T2"
+      },
+      "n": 26,
+      "groups": 8,
+      "X2": 8.9,
+      "df": 7,
+      "p": 0.2632294638606195
+     },
+     {
+      "cell": {
+       "model": "qwen3:14b",
+       "temperature": 0.7,
+       "answerable": false,
+       "experiment": "W5",
+       "cell_norm": "T1 t=0.7",
+       "cell_kind": "A",
+       "technique": "T1"
+      },
+      "n": 18,
+      "groups": 8,
+      "X2": 8.4,
+      "df": 7,
+      "p": 0.29864634297052667
+     }
+    ]
+   },
+   "mythos_type_decomposition_wave10_v1.jsonl": {
+    "cells": 7,
+    "X2": 46.0,
+    "df": 68,
+    "phi_between_repeat": 0.677,
+    "p_pooled": 0.981126709798911,
+    "cells_flagged_p_lt_0.01": 0,
+    "expected_false_flags": 0.07,
+    "worst_cells": [
+     {
+      "cell": {
+       "model": "mythos-nemotron-nano-9b-v2:q5km",
+       "temperature": 0.7,
+       "experiment": "P",
+       "cell_norm": "v3_label_value t=0.7",
+       "variant": "v3_label_value"
+      },
+      "n": 62,
+      "groups": 11,
+      "X2": 11.4,
+      "df": 10,
+      "p": 0.33078278116805976
+     },
+     {
+      "cell": {
+       "model": "mythos-nemotron-nano-9b-v2:q5km",
+       "temperature": 0.7,
+       "experiment": "P",
+       "cell_norm": "v1_label_only t=0.7",
+       "variant": "v1_label_only"
+      },
+      "n": 56,
+      "groups": 10,
+      "X2": 9.1,
+      "df": 9,
+      "p": 0.4320575782928607
+     },
+     {
+      "cell": {
+       "model": "mythos-nemotron-nano-9b-v2:q5km",
+       "temperature": 0.0,
+       "experiment": "P",
+       "cell_norm": "v1_label_only t=0.0",
+       "variant": "v1_label_only"
+      },
+      "n": 66,
+      "groups": 10,
+      "X2": 5.3,
+      "df": 9,
+      "p": 0.807599435468991
+     }
+    ]
+   }
+  }
+ },
+ "between_repeat_calibration": {
+  "mythos_battery_wave6_v1.jsonl": {
+   "permuted_null_phi_mean": 1.007,
+   "permuted_null_phi_2.5_97.5": [
+    0.741,
+    1.349
+   ],
+   "permuted_null_reject_rate_a05": 0.095,
+   "injected_extreme_phi": 17.29,
+   "observed_phi_paper_cells": 0.729
+  },
+  "mythos_exploration_wave2_v1.jsonl": {
+   "permuted_null_phi_mean": 1.073,
+   "permuted_null_phi_2.5_97.5": [
+    0.793,
+    1.451
+   ],
+   "permuted_null_reject_rate_a05": 0.085,
+   "injected_extreme_phi": 2.97,
+   "observed_phi_paper_cells": 0.57
+  },
+  "mythos_exploration_wave3_v1.jsonl": {
+   "permuted_null_phi_mean": 1.054,
+   "permuted_null_phi_2.5_97.5": [
+    0.88,
+    1.237
+   ],
+   "permuted_null_reject_rate_a05": 0.095,
+   "injected_extreme_phi": 3.16,
+   "observed_phi_paper_cells": 0.892
+  },
+  "mythos_lepsilon_decisive_wave9_v1.jsonl": {
+   "permuted_null_phi_mean": 1.007,
+   "permuted_null_phi_2.5_97.5": [
+    0.742,
+    1.282
+   ],
+   "permuted_null_reject_rate_a05": 0.04,
+   "injected_extreme_phi": 130.28,
+   "observed_phi_paper_cells": 0.505
+  },
+  "mythos_reading_derived_wave11_v1.jsonl": {
+   "permuted_null_phi_mean": 0.987,
+   "permuted_null_phi_2.5_97.5": [
+    0.777,
+    1.242
+   ],
+   "permuted_null_reject_rate_a05": 0.02,
+   "injected_extreme_phi": 14.85,
+   "observed_phi_paper_cells": 0.428
+  },
+  "mythos_technique_wave5_v1.jsonl": {
+   "permuted_null_phi_mean": 1.0,
+   "permuted_null_phi_2.5_97.5": [
+    0.67,
+    1.441
+   ],
+   "permuted_null_reject_rate_a05": 0.045,
+   "injected_extreme_phi": 30.62,
+   "observed_phi_paper_cells": 0.39
+  },
+  "mythos_type_decomposition_wave10_v1.jsonl": {
+   "permuted_null_phi_mean": 1.004,
+   "permuted_null_phi_2.5_97.5": [
+    0.678,
+    1.389
+   ],
+   "permuted_null_reject_rate_a05": 0.07,
+   "injected_extreme_phi": 60.32,
+   "observed_phi_paper_cells": 0.115
+  }
+ },
+ "pooling": {
+  "mythos_battery_wave6_v1.jsonl": {
+   "paper_cells": 40,
+   "design_cells_per_paper_cell_min": 1,
+   "design_cells_per_paper_cell_max": 8,
+   "design_cells_per_paper_cell_mean": 2.2
+  },
+  "mythos_exploration_wave2_v1.jsonl": {
+   "paper_cells": 76,
+   "design_cells_per_paper_cell_min": 1,
+   "design_cells_per_paper_cell_max": 4,
+   "design_cells_per_paper_cell_mean": 1.2
+  },
+  "mythos_exploration_wave3_v1.jsonl": {
+   "paper_cells": 52,
+   "design_cells_per_paper_cell_min": 1,
+   "design_cells_per_paper_cell_max": 2,
+   "design_cells_per_paper_cell_mean": 1.2
+  },
+  "mythos_lepsilon_decisive_wave9_v1.jsonl": {
+   "paper_cells": 12,
+   "design_cells_per_paper_cell_min": 26,
+   "design_cells_per_paper_cell_max": 26,
+   "design_cells_per_paper_cell_mean": 26.0
+  },
+  "mythos_reading_derived_wave11_v1.jsonl": {
+   "paper_cells": 24,
+   "design_cells_per_paper_cell_min": 1,
+   "design_cells_per_paper_cell_max": 8,
+   "design_cells_per_paper_cell_mean": 2.8
+  },
+  "mythos_technique_wave5_v1.jsonl": {
+   "paper_cells": 8,
+   "design_cells_per_paper_cell_min": 6,
+   "design_cells_per_paper_cell_max": 6,
+   "design_cells_per_paper_cell_mean": 6.0
+  },
+  "mythos_type_decomposition_wave10_v1.jsonl": {
+   "paper_cells": 6,
+   "design_cells_per_paper_cell_min": 8,
+   "design_cells_per_paper_cell_max": 8,
+   "design_cells_per_paper_cell_mean": 8.0
+  }
+ }
+}

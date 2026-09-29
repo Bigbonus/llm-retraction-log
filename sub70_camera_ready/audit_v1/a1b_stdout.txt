@@ -1,0 +1,9 @@
+mythos_battery_wave6_v1.jsonl                cells  18 phi_b 0.964  perm p 0.6264  null-mean 1.021  reuse None
+mythos_exploration_wave2_v1.jsonl            cells   9 phi_b 0.857  perm p 0.8681  null-mean 1.055  reuse None
+mythos_exploration_wave3_v1.jsonl            cells  25 phi_b 1.147  perm p 0.1818  null-mean 1.058  reuse {'design_cells_same_truth_set_every_repeat': 16, 'design_cells_truth_set_differs_between_repeats': 0}
+mythos_lepsilon_decisive_wave9_v1.jsonl      cells  81 phi_b 1.131  perm p 0.0529  null-mean 1.029  reuse None
+mythos_reading_derived_wave11_v1.jsonl       cells  16 phi_b 1.114  perm p 0.2967  null-mean 1.035  reuse None
+mythos_technique_wave5_v1.jsonl              cells  10 phi_b 0.993  perm p 0.5614  null-mean 1.033  reuse None
+mythos_type_decomposition_wave10_v1.jsonl    cells   7 phi_b 0.677  perm p 0.9331  null-mean 1.008  reuse None
+pooled 7 waves: phi_b 1.076 df 1424 perm p 0.1678 null-mean 1.033
+wrote G:\chappy_ai_storage\handoff\judge2026_submit_camera_ready_audit_v1\A_PHI_FINE_PERMUTATION_V1.json
