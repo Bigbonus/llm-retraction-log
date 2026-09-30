@@ -33,3 +33,5 @@ submitted figure, and checks that it fails on a known-bad input before reporting
 **Audit contract and examples:** `AUDIT_CONTRACT_V1.md` gives, for each of the five checks, input, assumptions, what it detects, what it misses, what to do after a flag, and whether it is a validated detector or human inspection. `examples/run_examples.py` builds two toy CSVs and two malformed ones, runs the v3 estimator with relative paths only, and compares against `EXPECTED_OUTPUT.txt`.
 
 **Calibration run (P1-c):** `P1C_PROTOCOL_DRAFT_V1.md` + `P1C_PROTOCOL_ADDENDUM_V1.md` (binding) fix the design; `P1C_RUN_MANIFEST_V1.json` pins the runner, estimator and both protocol hashes before the run; `p1c_run_v1.py` ran once; `P1C_RESULTS_V1.json` holds all 45 points (null rejection, Beta-binomial power, shared-item stress) with Wilson intervals; `P1C_RESULTS_V1.md` is the reading, favourable and unfavourable alike.
+
+`P1C_RESULTS_ADDENDUM_V1.md` corrects the commentary (six zero points, reuse claim limited to the tested generator, withdrawn small-df attribution, p-value rounding rule); the JSON is unchanged.
