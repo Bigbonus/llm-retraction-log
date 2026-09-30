@@ -1,0 +1,39 @@
+{
+ "id": "SUB70_P1C_RUN_MANIFEST_V1",
+ "runner": "p1c_run_v1.py",
+ "runner_sha256": "3f077c195d56de549561fb522ae5acf1a3a76687cb84a482be8a899f5cc96d38",
+ "estimator": "between_repeat_phi_v3.py",
+ "estimator_sha256": "20496faad33158150eef32ed4ea844d56f0f9374696c7a757771539be8532cd1",
+ "protocol_draft": "P1C_PROTOCOL_DRAFT_V1.md",
+ "protocol_draft_sha256": "86638721c85b876ca774b4211ae7a7c17478be125ac96bed87fa98f0f51b325c",
+ "protocol_addendum": "SUB70_V5_REVIEW_P1C_FREEZE_ADDENDUM_V1.md",
+ "protocol_addendum_sha256": "af5b78320ad7f4bd819434bde5cf0a7c4ff6ff1fd18011afd25fd795ec771ba3",
+ "settings": {
+  "families": [
+   "S1",
+   "S2:1.10",
+   "S2:1.25",
+   "S2:1.50",
+   "S3"
+  ],
+  "C": [
+   20,
+   60,
+   166
+  ],
+  "m": [
+   4,
+   8,
+   12
+  ],
+  "R": 4,
+  "N": 100,
+  "NPERM": 1000,
+  "base_seed": 20260930,
+  "dataset_seed": "base+100000*j+k",
+  "perm_seed": "dataset_seed+1000000000",
+  "reject": "p<0.05",
+  "budget_min": 120,
+  "workers": 1
+ }
+}
